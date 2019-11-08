@@ -8,6 +8,7 @@ $(function(){
 			type: 'POST',
 			success: function(response){
 				console.log(response);
+				alert("success");
 			},
 			error: function(error){
 				console.log(error);

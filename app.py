@@ -7,9 +7,13 @@ app = Flask(__name__)
 def hello():
     return 'Welcome to Python Flask!'
 
-@app.route('/signUp')
+@app.route('/signup')
 def signUp():
-    return render_template('signUp.html')
+    data = {"ip":"1.1.1.1",
+          "config1": "blah",
+          "config2": "bleh"
+           }
+    return render_template('signUp.html', data=data)
 
 @app.route('/signUpUser', methods=['POST'])
 def signUpUser():
@@ -18,4 +22,4 @@ def signUpUser():
     return json.dumps({'status':'OK','user':user,'pass':password});
 
 if __name__=="__main__":
-    app.run()
+    app.run(debug=True)
