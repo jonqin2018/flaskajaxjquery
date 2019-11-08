@@ -1,10 +1,9 @@
+
 $(function(){
 	$('button').click(function(){
-		var user = $('#txtUsername').val();
-		var pass = $('#txtPassword').val();
 		$.ajax({
-			url: '/signUpUser',
-			data: $('form').serialize(),
+			url: '/signupuser',
+			data:{"mydata": "world"},
 			type: 'POST',
 			success: function(response){
 				console.log(response);
@@ -16,3 +15,5 @@ $(function(){
 		});
 	});
 });
+
+

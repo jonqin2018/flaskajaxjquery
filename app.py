@@ -1,5 +1,6 @@
 import os
-from flask import Flask,render_template, request,json
+from flask import Flask,render_template, request,json,jsonify
+
 
 app = Flask(__name__)
 
@@ -15,11 +16,14 @@ def signUp():
            }
     return render_template('signUp.html', data=data)
 
-@app.route('/signUpUser', methods=['POST'])
-def signUpUser():
-    user =  request.form['username'];
-    password = request.form['password'];
-    return json.dumps({'status':'OK','user':user,'pass':password});
+@app.route('/signupuser', methods=['POST'])
+def signupuser():
+    test = request.args.get('mydata')
+    print(test)
+    print("something is not right")
+    # user =  request.form['username'];
+    # password = request.form['password'];
+    return json.dumps({'status':'200'})
 
 if __name__=="__main__":
     app.run(debug=True)
