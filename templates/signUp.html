@@ -19,7 +19,81 @@
 
    <script src="static/js/jquery-1.9.0.js"></script>
    <script src="static/js/script.js"></script>
-   
+   <script>
+      $(document).ready(function(){
+        $(".btn11").click(function(){
+        
+        var data_1 = {{data | safe }};
+        obj = JSON.stringify(data_1);
+          $.ajax({url:"/result", data: {"data": obj }, success: function(res){
+            console.log(res);
+          
+          res_dict = JSON.parse(res);
+          console.log(res_dict)
+          var myBooks = [];
+          myBooks.push(res_dict);
+          console.log(res_dict);
+        //  
+          var col = [];
+          for (var i = 0; i < myBooks.length; i++) {
+            for (var key in myBooks[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+         
+        // 
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+
+        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+        var tr = table.insertRow(-1);                   // TABLE ROW.
+
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th");      // TABLE HEADER.
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < myBooks.length; i++) {
+
+            tr = table.insertRow(-1);
+
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = myBooks[i][col[j]];
+            }
+        }
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("createtable");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+
+
+          }});
+        });
+      });
+      </script>
+
+<style>
+    th, td, p, input {
+        font:14px Verdana;
+    }
+    table, th, td 
+    {
+        border: solid 1px #DDD;
+        border-collapse: collapse;
+        padding: 2px 3px;
+        text-align: left;
+    }
+    th {
+        font-weight:bold;
+    }
+</style>
   </head>
 
   <body>
@@ -38,11 +112,16 @@
 
     </div> <!-- /container -->
 
-    <script>
+    <!-- <script>
       var data = JSON.parse('{{ data | tojson }}');
-        alert(JSON.stringify(data))
-    </script>
+        alert(JSON.stringify(data))  
+    </script> -->
 
+<button class="btn11">send data</button>
+<br>
+<br>
+<br>
+<div id="createtable"></div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
