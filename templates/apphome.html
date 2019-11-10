@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Ajax test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/signin.css" rel="stylesheet">
+
+   <script src="static/js/jquery-1.9.0.js"></script>
+   <script src="static/js/script.js"></script>
+   <script>
+      $(document).ready(function(){
+        $("#btn11").click(function(){
+        
+        var data_1 = {{data | safe }};
+        obj = JSON.stringify(data_1);
+          $.ajax({url:"/result", data: {"data": obj }, success: function(res){
+            console.log(res);
+          // return res is an array 
+          var res_array = JSON.parse(res);
+          console.log(res_array)
+          $("#secret_field").append("<br> Return data is:  <br>" +  JSON.stringify(res_array));
+          // res_array.push(res_dict);
+          // console.log(res_dict);
+        //  
+          var col = [];
+          for (var i = 0; i < res_array.length; i++) {
+            for (var key in res_array[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+         
+        // 
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+            table.setAttribute("class", "w3-table-all")
+
+        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+        var tr = table.insertRow(-1);                   // TABLE ROW.
+
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th");      // TABLE HEADER.
+            th.setAttribute("class", "w3-green")
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < res_array.length; i++) {
+
+            tr = table.insertRow(-1);
+
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = res_array[i][col[j]];
+            }
+        }
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("createtable");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+       
+        // reveal secret field
+
+        var info_str = "<br> USERNAME: {{ session["cli_username"] }} <br>PASSWORD: {{ session["cli_password"] }} ";
+            info_str = info_str + "<br>String variable:  {{ string_var }}";
+
+        $("#secret_field").append(info_str);
+
+          }});
+        });
+      });
+      </script>
+
+  </head>
+
+<body>
+
+<div class="w3-container">  
+<h1> Ajax test</h1>
+
+<div class=" w3-card-4">
+<pre>Data is hosted on first page ("/"), Flask backend returns json and string test data and renders them to /apphome.html page.
+    <div class="w3-code jsHigh notranslate">
+  def first_page():
+  data = [ 
+          {"IP":"1.1.1.1",
+           "CONFIG1": "blah",
+           "CONFIG2": "bleh"
+          }, 
+         
+          {"IP":"2.2.2.2",
+            "CONFIG1": "blah2",
+            "CONFIG2": "bleh2",
+          },
+
+          {"IP":"3.3.3.3",
+            "CONFIG1": "blah3",
+            "CONFIG2": "bleh3",
+          }
+
+         ]
+  string_var = "This is a string"
+
+  session["cli_username"] = "cli_username_value"
+  session["cli_password"] = "cli_password_value"
+
+  return render_template('apphome.html', data=data, string_var=string_var)
+</div> <!--end of code -->
+ <p> Press the button, the above data (data, string_var) will be sent to Flask below route, then returned back.</p>
+ <div class="w3-code jsHigh notranslate ">
+ <pre> @app.route('/result')
+  def result():
+      data = request.args.get('data')
+      return data
+
+JQuery Ajax:
+      $.ajax({url:"/result", data: {"data": obj }, success: function(res){ ...}
+
+</div> <!-- end of code -->
+      <p>return data is in res</p>
+    </pre>
+<button class="w3-button w3-green" type="button" id="btn11">send data</button>
+<br>
+</div>  <!-- end of w3 card -->
+
+<div class="w3-panel w3-red w3-card-4" id="secret_field">
+</div>
+
+<div class ="w3-panel w3-card-4" id="createtable"></div>
+
+</div> <!-- end of container-->
+
+  </body>
+</html>
+
