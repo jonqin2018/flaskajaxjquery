@@ -7,26 +7,30 @@ app = Flask(__name__)
 @app.route('/result')
 def result():
     data = request.args.get('data')
-    data_1 = [].append(json.loads(data))
-    print(data_1)
+    # data_1 = [].append(json.loads(data))
+    # print(data_1)
     return data
 
 @app.route('/signup')
 def signUp():
-    data = {"ip":"1.1.1.1",
-          "config1": "blah",
-          "config2": "bleh"
-           }
-    return render_template('signUp.html', data=data)
+    data = [ 
+            {"IP":"1.1.1.1",
+             "CONFIG1": "blah",
+             "CONFIG2": "bleh"
+            }, 
+           
+            {"IP":"2.2.2.2",
+              "CONFIG1": "blah2",
+              "CONFIG2": "bleh2",
+            },
 
-# @app.route('/signupuser', methods=['POST'])
-# def signupuser():
-#     # test = request.args.get('mydata')
-#     # print(test)
-#     # print("something is not right")
-#     # # user =  request.form['username'];
-#     # # password = request.form['password'];
-#     return json.dumps({'status':'200!'})
+            {"IP":"3.3.3.3",
+              "CONFIG1": "blah3",
+              "CONFIG2": "bleh3",
+            }
+
+           ]
+    return render_template('signUp.html', data=data)
 
 if __name__=="__main__":
     app.run(debug=True)

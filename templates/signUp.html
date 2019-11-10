@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Signin Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
@@ -28,11 +28,11 @@
           $.ajax({url:"/result", data: {"data": obj }, success: function(res){
             console.log(res);
           
-          res_dict = JSON.parse(res);
-          console.log(res_dict)
-          var myBooks = [];
-          myBooks.push(res_dict);
-          console.log(res_dict);
+          res_array = JSON.parse(res);
+          console.log(res_array)
+          var myBooks = res_array;
+          // myBooks.push(res_dict);
+          // console.log(res_dict);
         //  
           var col = [];
           for (var i = 0; i < myBooks.length; i++) {
@@ -46,6 +46,7 @@
         // 
         // CREATE DYNAMIC TABLE.
         var table = document.createElement("table");
+            table.setAttribute("class", "w3-table-all")
 
         // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 
@@ -53,6 +54,7 @@
 
         for (var i = 0; i < col.length; i++) {
             var th = document.createElement("th");      // TABLE HEADER.
+            th.setAttribute("class", "w3-green")
             th.innerHTML = col[i];
             tr.appendChild(th);
         }
@@ -73,49 +75,14 @@
         divContainer.innerHTML = "";
         divContainer.appendChild(table);
 
-
           }});
         });
       });
       </script>
 
-<style>
-    th, td, p, input {
-        font:14px Verdana;
-    }
-    table, th, td 
-    {
-        border: solid 1px #DDD;
-        border-collapse: collapse;
-        padding: 2px 3px;
-        text-align: left;
-    }
-    th {
-        font-weight:bold;
-    }
-</style>
   </head>
 
   <body>
-
-    <div class="container">
-
-      <form class="form-signin"  role="form">
-        <h2 class="form-signin-heading">Please Sign Up</h2>
-        <input type="email" id="txtUsername" name="username" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" id="txtPassword" name="password" class="form-control" placeholder="Password" required>
-        
-        <button class="btn btn-lg btn-primary btn-block" type="button">Register</button>
-      </form>
-
- 	
-
-    </div> <!-- /container -->
-
-    <!-- <script>
-      var data = JSON.parse('{{ data | tojson }}');
-        alert(JSON.stringify(data))  
-    </script> -->
 
 <button class="btn11">send data</button>
 <br>
