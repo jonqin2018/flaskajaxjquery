@@ -33,7 +33,7 @@ def first_page():
             }
 
            ]
-    string_var = "This is a string"
+    string_var = "192.168.1.1"
 
     session["cli_username"] = "cli_username_value"
     session["cli_password"] = "cli_password_value"

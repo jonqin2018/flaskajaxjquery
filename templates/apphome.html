@@ -19,12 +19,26 @@
 
    <script src="static/js/jquery-1.9.0.js"></script>
    <script src="static/js/script.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    <script>
       $(document).ready(function(){
         $("#btn11").click(function(){
+                        
+        var data_1 = {{ data | safe }};
         
-        var data_1 = {{data | safe }};
         obj = JSON.stringify(data_1);
+        
+        swal({
+        title: "Are you sure?",
+        text: "Sending config commands to {{string_var}}, not reversible please double check and confirm!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+
+          ////
           $.ajax({url:"/result", data: {"data": obj }, success: function(res){
             console.log(res);
           // return res is an array 
@@ -82,9 +96,30 @@
 
         $("#secret_field").append(info_str);
 
-          }});
-        });
+          }}); //end of ajax call
+          ///   
+
+            swal("Done configration!", {
+              icon: "success",
+            });
+          } else {
+            swal("No configure is pushed!");
+          }
       });
+        
+        
+        
+          
+
+
+ 
+
+        });  // end of button function
+        
+
+      }); // end of document ready
+
+       //end of if 
       </script>
 
   </head>
@@ -95,6 +130,10 @@
 <h1> Ajax test</h1>
 
 <div class=" w3-card-4">
+<button class="w3-button w3-green" type="button" id="btn11">send data</button>
+<div class="w3-panel w3-red w3-card-4" id="secret_field"> </div>
+<div class ="w3-panel w3-card-4" id="createtable"></div>
+
 <pre>Data is hosted on first page ("/"), Flask backend returns json and string test data and renders them to /apphome.html page.
     <div class="w3-code jsHigh notranslate">
   def first_page():
@@ -134,15 +173,9 @@ JQuery Ajax:
 
 </div> <!-- end of code -->
       <p>return data is in res</p>
-    </pre>
-<button class="w3-button w3-green" type="button" id="btn11">send data</button>
-<br>
+</pre>
+
 </div>  <!-- end of w3 card -->
-
-<div class="w3-panel w3-red w3-card-4" id="secret_field">
-</div>
-
-<div class ="w3-panel w3-card-4" id="createtable"></div>
 
 </div> <!-- end of container-->
 
