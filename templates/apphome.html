@@ -106,22 +106,13 @@
             swal("No configure is pushed!");
           }
       });
-        
-        
-        
-          
-
-
- 
 
         });  // end of button function
-        
 
       }); // end of document ready
 
        //end of if 
       </script>
-
   </head>
 
 <body>
@@ -130,12 +121,15 @@
 <h1> Ajax test</h1>
 
 <div class=" w3-card-4">
-<button class="w3-button w3-green" type="button" id="btn11">send data</button>
+<button class="w3-button w3-green w3-hover-red" type="button" id="btn11">send data</button>
 <div class="w3-panel w3-red w3-card-4" id="secret_field"> </div>
 <div class ="w3-panel w3-card-4" id="createtable"></div>
 
-<pre>Data is hosted on first page ("/"), Flask backend returns json and string test data and renders them to /apphome.html page.
-    <div class="w3-code jsHigh notranslate">
+<p class="w3-large" > Data is hosted on first page ("/"), Flask backend returns json and string test data and renders them to /apphome.html page. </p>
+    
+<div class="w3-code w3-margin jsHigh notranslate">
+
+<pre>
   def first_page():
   data = [ 
           {"IP":"1.1.1.1",
@@ -160,9 +154,12 @@
   session["cli_password"] = "cli_password_value"
 
   return render_template('apphome.html', data=data, string_var=string_var)
+</pre>
 </div> <!--end of code -->
- <p> Press the button, the above data (data, string_var) will be sent to Flask below route, then returned back.</p>
- <div class="w3-code jsHigh notranslate ">
+ 
+<p class="w3-large" > Press the button, the above data (data, string_var) will be sent to Flask below route, then returned back.</p>
+ 
+ <div class="w3-code w3-margin jsHigh notranslate ">
  <pre> @app.route('/result')
   def result():
       data = request.args.get('data')
@@ -170,11 +167,11 @@
 
 JQuery Ajax:
       $.ajax({url:"/result", data: {"data": obj }, success: function(res){ ...}
-
+    </pre>
 </div> <!-- end of code -->
-      <p>return data is in res</p>
-</pre>
-
+      <p class="w3-large">return data is in res</p>
+      
+<br>
 </div>  <!-- end of w3 card -->
 
 </div> <!-- end of container-->
