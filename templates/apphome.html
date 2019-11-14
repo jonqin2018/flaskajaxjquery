@@ -20,7 +20,34 @@
    <script src="static/js/jquery-1.9.0.js"></script>
    <script src="static/js/script.js"></script>
    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+   <style>
+   #customers {
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #customers tr:hover {background-color: #ddd;}
+        
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        } 
+   </style>
+   
    <script>
+     let selected_config = new Array();
       $(document).ready(function(){
         $("#btn11").click(function(){
                         
@@ -110,11 +137,83 @@
 
         });  // end of button function
 
-      }); // end of document ready
+
+    /////////////////// check select
+    $(".checkboxClass").click(function(){
+        let selectedCountry = new Array();
+        var n = $(".checkboxClass:checked").length;
+        if (n > 0){
+            $(".checkboxClass:checked").each(function(){
+                selectedCountry.push($(this).val());
+            });
+        }
+        selected_config = selectedCountry
+        console.log(selectedCountry);
+    });
+    /////////////////// btn12 
+    
+    $("#btn12").click(function(){
+                        console.log(selected_config)
+                        var data_1 = selected_config;
+                        
+                        obj = JSON.stringify(data_1);
+                        
+                        swal({
+                        title: "Are you sure?",
+                        text: "Sending config commands to {{string_var}}, not reversible please double check and confirm!",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                        })
+                        .then((willDelete) => {
+                          if (willDelete) {
+                  
+                        ////
+                        var data = {
+                        "ipaddress": JSON.stringify(["1.1.1.1"]),
+                         "package": JSON.stringify(selected_config),
+                       };
+
+                        obj = JSON.stringify(data);
+                        $.ajax({url:"/TechType_fix_config", data: {"data": obj }, success: function(res_str){
+                          console.log(res_str);
+                        ////
+                          // return res is an array 
+                          var res_array = JSON.parse(res_str);
+                          console.log(res_array);
+                          $("#secret_field").empty();
+                          $("#secret_field").append("<br> Return data is:  <br>" +  JSON.stringify(res_array));
+                          // res_array.push(res_dict);
+                          // console.log(res_dict);
+                        //  
+                          
+                        // reveal secret field
+                
+                        var info_str = "<br> USERNAME: {{ session["cli_username"] }} <br>PASSWORD: {{ session["cli_password"] }} ";
+                            info_str = info_str + "<br>String variable:  {{ string_var }}";
+                
+                        $("#secret_field").append(info_str);
+                
+                          }}); //end of ajax call
+                          ///   
+                
+                            swal("Done configration!", {
+                              icon: "success",
+                            });
+                          } else {
+                            swal("No configure is pushed!");
+                          }
+                      });
+                
+                        });  // end of button function
+
+
+    }); // end of document ready
 
        //end of if 
       </script>
-  </head>
+  
+</head>
 
 <body>
 
@@ -122,7 +221,35 @@
 <h1> Ajax test</h1>
 
 <div class=" w3-card-4">
-<button class="w3-button w3-green w3-hover-red" type="button" id="btn11">send data</button>
+    <p>Data received from server</p>
+
+    <table id="customers" style="table-layout: auto;">
+        <tr>
+                <th style="width: 5%">Select</th>
+                <th style="width: 20%">XC ID</th>
+                <th>Configure Command</th>
+        </tr>
+        
+    {% for item in data %}
+      {% for key, value in item.items()%}
+      
+    <tr>
+      {% autoescape false %}     
+      <td><input type="checkbox" class="checkboxClass" value="{{value}}""> </td>
+      <td> {{key}}</td>  
+      <td> {{value}} </td>
+      {% endautoescape %} 
+       
+  </tr>
+     {% endfor%} <!--end dict loop--> 
+  {%- endfor -%} <!-- end array loop-->
+  </table>
+
+<br>
+
+<span><button class="w3-button w3-green w3-hover-red" type="button" id="btn11">send entire data</button> <button class="w3-button w3-green w3-hover-red" type="button" id="btn12">send selected data</button> </span>
+<hr style = "border-top: 1px solid green">
+<br>
 <div class="w3-panel w3-red w3-card-4 w3-margin" id="secret_field"> </div>
 <div class ="w3-panel w3-card-4 w3-margin" id="createtable"></div>
 

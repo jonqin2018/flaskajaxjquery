@@ -40,5 +40,48 @@ def first_page():
 
     return render_template('apphome.html', data=data, string_var=string_var)
 
+@app.route('/TechType_fix_config')
+#Process selected checkbox
+def techType_config():
+    """
+    input: data received from UI in below format, 
+           {
+                "ipaddress": ["wp-nr-351"]
+                "package": "{'17': 'config xc 17 usertech zatech 14,11', '37': 'config xc 37 usertech zatech 12,10', '36': 'config xc 36 usertech zatech 12,10'}"
+            }                       
+           cli_username: is from session["cli_username"]
+           cli_password: is from session["cli_password"]
+    output: output_data
+    """
+    data = request.args.get('data')
+    data_dict = json.loads(data)
+    ne_ipaddress = data_dict["ipaddress"] # list []
+    config_dict = json.loads(data_dict["package"].replace("\'", "\""))
+    # print(type(config_dict))
+    # print(json.dumps(config_dict,indent=4))
+    
+    cmds = config_dict# list []
+    
+    # print("ne_ipaddress --> ", ne_ipaddress)
+    # print("cmds -- > ", cmds)
+    username = session["cli_username"]
+    password = session["cli_password"]
+
+    ############ WARNING CONFIGURATION#############
+    # 
+    # nokia_excute_cmd(ne_ipaddress,cmds, username, password) 
+    #
+    #################
+
+    # return 'show xc xcid' for verification
+   
+    for item in cmds:
+       
+        print(item)
+    
+    # print(json.dumps(output_data))
+ 
+    return json.dumps(config_dict)
+
 if __name__=="__main__":
     app.run(debug=True)
