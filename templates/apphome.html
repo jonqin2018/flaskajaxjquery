@@ -21,7 +21,7 @@
    <script src="static/js/script.js"></script>
    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    
-   <style>
+<style>
    #customers {
           font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           border-collapse: collapse;
@@ -45,10 +45,63 @@
           color: white;
         } 
    </style>
-   
+
+<style>  
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hide-loader{
+display:none;
+}
+
+.show-loader {
+  display:block;
+}
+
+.hide-overlay {
+  display:none;
+}
+
+.show-overlay {
+  display:block;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+</style>
    <script>
+     
      let selected_config = new Array();
       $(document).ready(function(){
+        
+        $('#loader').addClass("hide-loader");
+       
         $("#btn11").click(function(){
                         
         var data_1 = {{ data | safe }};
@@ -153,6 +206,7 @@
     /////////////////// btn12 
     
     $("#btn12").click(function(){
+                      
                         console.log(selected_config)
                         var data_1 = selected_config;
                         
@@ -167,7 +221,10 @@
                         })
                         .then((willDelete) => {
                           if (willDelete) {
-                  
+                            // $('#loader').addClass("show-loader");
+                            // $('#loader').removeClass("hide-loader");
+                            $('#overlay').addClass("show-overlay");
+                            $('#overlay').removeClass("hide-overlay");
                         ////
                         var data = {
                         "ipaddress": JSON.stringify(["1.1.1.1"]),
@@ -175,9 +232,14 @@
                        };
 
                         obj = JSON.stringify(data);
-                        $.ajax({url:"/TechType_fix_config", data: {"data": obj }, success: function(res_str){
+
+                        function your_func() {
+                          $.ajax({url:"/TechType_fix_config", data: {"data": obj }, success: function(res_str){
                           console.log(res_str);
-                        ////
+                        
+                        // delay 5 secs to show the loader effect
+
+
                           // return res is an array 
                           var res_array = JSON.parse(res_str);
                           console.log(res_array);
@@ -191,36 +253,61 @@
                 
                         var info_str = "<br> USERNAME: {{ session["cli_username"] }} <br>PASSWORD: {{ session["cli_password"] }} ";
                             info_str = info_str + "<br>String variable:  {{ string_var }}";
-                
+                 
                         $("#secret_field").append(info_str);
-                
+
+                        $('#overlay').addClass("hide-overlay");
+                        $('#overlay').removeClass("show-overlay");
+
                           }}); //end of ajax call
+                          console.log("noop");
+                        }
+                        setTimeout(function() { your_func(); }, 2000);
+                        
                           ///   
                 
                             swal("Done configration!", {
                               icon: "success",
                             });
+                   
+
                           } else {
                             swal("No configure is pushed!");
-                          }
-                      });
-                
-                        });  // end of button function
+                            }
+                       });  //end of then
+                       
 
 
+                        
+                        }); // end of button function
     }); // end of document ready
 
+    
+    function on() {
+         document.getElementById("overlay").style.display = "block";
+                   }
+
+        function off() {
+         document.getElementById("overlay").style.display = "none";
+                      }
+
        //end of if 
-      </script>
+   </script>
   
 </head>
 
 <body>
+<div class="loader"  id="loader">
+</div>
 
-<div class="w3-container">  
+<div class="w3-container" >  
+
 <h1> Ajax test</h1>
-
-<div class=" w3-card-4">
+<div id="overlay"> 
+  <div class="loader w3-center" style="display: block;"></div>
+  <button class="w3-button w3-green w3-hover-red w3-right w3-bottom" onclick="off()">Turn off overlay effect</button>
+</div>
+<div class=" w3-card-4"  >
     <p>Data received from server</p>
 
     <table id="customers" style="table-layout: auto;">
@@ -247,7 +334,12 @@
 
 <br>
 
-<span><button class="w3-button w3-green w3-hover-red" type="button" id="btn11">send entire data</button> <button class="w3-button w3-green w3-hover-red" type="button" id="btn12">send selected data</button> </span>
+<span><button class="w3-button w3-green w3-hover-red" type="button" id="btn11">send entire data</button> 
+<button class="w3-button w3-green w3-hover-red" type="button" id="btn12">send selected data</button> 
+<button class="w3-button w3-green w3-hover-red" onclick="on()">Turn on overlay effect</button>
+<button class="w3-button w3-green w3-hover-red" onclick="off()">Turn off overlay effect</button>
+</span>
+
 <hr style = "border-top: 1px solid green">
 <br>
 <div class="w3-panel w3-red w3-card-4 w3-margin" id="secret_field"> </div>
