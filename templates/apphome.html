@@ -143,7 +143,7 @@ display:none;
         // CREATE DYNAMIC TABLE.
         var table = document.createElement("table");
             table.setAttribute("class", "w3-table-all");
-            table.setAttribute("class", "w3-border");
+            
             
 
         // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
@@ -342,14 +342,19 @@ display:none;
   </table>
 
 <br>
-
+<script>
+  function reload_page() {
+    window.location.href = window.location.href;
+  }
+</script>
+<hr style = "border-top: 1px solid; width: 90%; position: relative; left: 30px;"  class="w3-center w3-green">
 <span style="position: relative; left: 30px;" ><button class="w3-button w3-green w3-hover-red" type="button" id="btn11">send entire data</button> 
 <button class="w3-button w3-green w3-hover-red" type="button" id="btn12">send selected data</button> 
 <button class="w3-button w3-green w3-hover-red" onclick="on()">Turn on overlay effect</button>
-<button class="w3-button w3-green w3-hover-red" onclick="off()">Turn off overlay effect</button>
+<button class="w3-button w3-green w3-hover-red" onclick="reload_page()">Reload page</button>
 </span>
 
-<hr style = "border-top: 1px solid; width: 90%; position: relative; left: 30px;"  class="w3-center">
+<hr style = "border-top: 1px solid; width: 90%; position: relative; left: 30px;"  class="w3-center w3-green">
 <br>
 <div class="w3-panel w3-red w3-card-4 w3-margin" id="secret_field"> </div>
 <div class ="w3-panel w3-card-4 w3-margin" id="createtable"></div>
