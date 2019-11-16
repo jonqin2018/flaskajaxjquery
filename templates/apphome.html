@@ -25,7 +25,8 @@
    #customers {
           font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
           border-collapse: collapse;
-          width: 100%;
+          width: 90%;
+          padding-left: 15px;
         }
         
         #customers td, #customers th {
@@ -38,6 +39,7 @@
         #customers tr:hover {background-color: #ddd;}
         
         #customers th {
+          
           padding-top: 12px;
           padding-bottom: 12px;
           text-align: left;
@@ -141,6 +143,7 @@ display:none;
         // CREATE DYNAMIC TABLE.
         var table = document.createElement("table");
             table.setAttribute("class", "w3-table-all");
+            table.setAttribute("class", "w3-border");
             
 
         // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
@@ -300,17 +303,23 @@ display:none;
 <div class="loader"  id="loader">
 </div>
 
-<div class="w3-container" >  
 
+<div class="w3-container"  >  
+
+<div class="w3-cell-row">
+  <div class="w3-container w3-cell" style="width: 15%">
+  </div>
+
+  <div class="w3-container w3-cell">
 <h1> Ajax test</h1>
 <div id="overlay"> 
   <div class="loader w3-center" style="display: block;"></div>
   <button class="w3-button w3-green w3-hover-red w3-right w3-bottom" onclick="off()">Turn off overlay effect</button>
 </div>
-<div class=" w3-card-4"  >
+<div class=" w3-card-4"  style="width:70%" > <!--make card smaller not on entire screen-->
     <p>Data received from server</p>
 
-    <table id="customers" style="table-layout: auto;">
+    <table id="customers" style="table-layout: auto; position: relative; left: 30px;" class="w3-border">
         <tr>
                 <th style="width: 5%">Select</th>
                 <th style="width: 20%">XC ID</th>
@@ -334,13 +343,13 @@ display:none;
 
 <br>
 
-<span><button class="w3-button w3-green w3-hover-red" type="button" id="btn11">send entire data</button> 
+<span style="position: relative; left: 30px;" ><button class="w3-button w3-green w3-hover-red" type="button" id="btn11">send entire data</button> 
 <button class="w3-button w3-green w3-hover-red" type="button" id="btn12">send selected data</button> 
 <button class="w3-button w3-green w3-hover-red" onclick="on()">Turn on overlay effect</button>
 <button class="w3-button w3-green w3-hover-red" onclick="off()">Turn off overlay effect</button>
 </span>
 
-<hr style = "border-top: 1px solid green">
+<hr style = "border-top: 1px solid; width: 90%; position: relative; left: 30px;"  class="w3-center">
 <br>
 <div class="w3-panel w3-red w3-card-4 w3-margin" id="secret_field"> </div>
 <div class ="w3-panel w3-card-4 w3-margin" id="createtable"></div>
@@ -393,7 +402,8 @@ JQuery Ajax:
       
 <br>
 </div>  <!-- end of w3 card -->
-
+</div> <!--end of cell-->
+</div>  <!-- end of cell row-->
 </div> <!-- end of container-->
 
   </body>
