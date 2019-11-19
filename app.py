@@ -83,5 +83,28 @@ def techType_config():
  
     return json.dumps(config_dict)
 
+
+@app.route('/form_process')
+def form_process():
+    data = [ 
+        {"IP":"1.1.1.1",
+         "CONFIG1": "blah",
+         "CONFIG2": "bleh"
+        }, 
+    
+        {"IP":"2.2.2.2",
+          "CONFIG1": "blah2",
+          "CONFIG2": "bleh2",
+        },
+        {"IP":"3.3.3.3",
+          "CONFIG1": "blah3",
+          "CONFIG2": "bleh3",
+        }
+       ]
+    data_from_form_input = request.args.get('q')
+    print(data)
+    flash("got data")
+    return render_template('apphome.html', form_data = data_from_form_input , data=data, string_var="")
+
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
