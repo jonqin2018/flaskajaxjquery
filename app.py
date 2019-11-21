@@ -40,6 +40,33 @@ def first_page():
 
     return render_template('apphome.html', data=data, string_var=string_var)
 
+@app.route('/fetch')
+def fetch():
+    data = [ 
+            {"IP":"1.1.1.1",
+             "CONFIG1": "blah",
+             "CONFIG2": "bleh"
+            }, 
+           
+            {"IP":"2.2.2.2",
+              "CONFIG1": "blah2",
+              "CONFIG2": "bleh2",
+            },
+
+            {"IP":"3.3.3.3",
+              "CONFIG1": "blah3",
+              "CONFIG2": "bleh3",
+            }
+
+           ]
+    string_var = "192.168.1.1"
+
+    session["cli_username"] = "cli_username_value"
+    session["cli_password"] = "cli_password_value"
+
+    return jsonify(data)
+
+
 @app.route('/TechType_fix_config')
 #Process selected checkbox
 def techType_config():
