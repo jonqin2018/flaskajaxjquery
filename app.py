@@ -1,6 +1,8 @@
 import os
 from flask import Flask,render_template, request,json,jsonify, session
 from flask import Blueprint, render_template, redirect, url_for, request, flash, session, send_file, send_from_directory
+from collections import OrderedDict
+import re
 
 app = Flask(__name__)
 
@@ -133,5 +135,53 @@ def form_process():
     flash("got data")
     return render_template('apphome.html', form_data = data_from_form_input , data=data, string_var="")
 
+
+@app.route('/array_test', methods=['GET','POST'])
+def array_test():
+    data2 = []
+    ord_dict = OrderedDict() 
+    print(type(ord_dict))
+    num = ''
+    if request.method == 'POST':
+        print("in array_test function...")
+        # data = request.args.get('data')
+        data1= json.loads(request.get_json())
+        # print(data1[0])
+        print(json.dumps(data1, indent=4))
+        # process dict
+            
+        
+        for item in data1:
+          # find the number
+          ord_dict = OrderedDict() 
+          for key in item.keys():
+            print("key type is ----> ", type(key))
+            
+            if re.findall(r'\d+',key) != []:
+                print("i am inside if... ")
+                num = re.findall(r'\d+', key)[0]
+                print(num)
+                # ord_dict[]
+            
+                ord_dict[num] = item[num]
+                ord_dict["frequency"] = item["frequency"]
+                ord_dict["och_trail"] = item["och_trail"]
+                ord_dict["och_trail"] = item["och_trail"]
+                ord_dict["tech_az"] = item["tech_az"]
+                ord_dict["tech_za"] = item["tech_za"]
+
+          data2.append(ord_dict) 
+
+          
+
+        
+        data2.sort(key=(lambda x: x.keys()[0]))
+        print(data2)
+        return json.dumps(data2)
+        
+    else: 
+        data1 = []
+        sorted_data1= []
+        return render_template('array_test.html', data = data1 ,  sorted_data = sorted_data1)
 if __name__=="__main__":
     app.run(debug=True, port=5001)

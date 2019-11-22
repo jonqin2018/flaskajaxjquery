@@ -20,7 +20,6 @@
    <script src="static/js/jquery-1.9.0.js"></script>
    <script src="static/js/script.js"></script>
    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-   <!-- <script src="static/js/fetch.js"></script> -->
    <script type="module" src="static/js/fetch.js"></script>
    
 <style>
@@ -285,30 +284,16 @@ display:none;
         
   /////////////////// btn13
   $("#btn13").click(function () {
-      //   try {
-      //     let response = fetch('/fetch', {
-      //       method: "GET",
 
-      //     })
-      //     let data =  response;
-      //     console.log(data);
-      //     if (!data.r) {
-      //       $('#fetch_result').html(data.rs);
-
-      //     } else {
-      //       $('#fetch_result').html(data.error);
-      //     }
-
-      //   } catch (e) {
-      //     console.log("something wrong", e);
-      //   }
-      // }); // end of button 13 function
       fetchtest();
   
-      })
+      })  //end of btn13 function
+
+  
 
     }); // end of document ready
-       //end of if 
+      
+  
 
    </script>
 
@@ -327,11 +312,10 @@ display:none;
     } else {
       alert("HTTP-Error: " + response.status);
     }
-
   
   }
-
 </script>
+
 
 </head>
 
@@ -366,7 +350,12 @@ display:none;
   <button class="w3-button w3-green w3-hover-red w3-right w3-bottom" onclick="off()">Turn off overlay effect</button>
 </div>
 <div class=" w3-card-4"  style="width:70%" > <!--make card smaller not on entire screen-->
-  <button class="w3-button w3-green w3-hover-red w3-right" style="margin-right: 10px; margin-top: 10px; width: 150px;"  onclick="reload_page()">  Reload page  </button>
+  <span>
+      <a href="/array_test">array test</a>
+
+    <button class="w3-button w3-green w3-hover-red w3-right" style="margin-right: 10px; margin-top: 10px; width: 200px;" onclick="reload_page()">  Reload page </button>
+    
+  </span>
 <h2>fetch</h2>
 <div style="margin-left: 20px;">
 <button id="btn13" style="margin-right: 10px" class= "w3-button w3-green w3-hover-red">Fetch from /fetch using fetch</button>
