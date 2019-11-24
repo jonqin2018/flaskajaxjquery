@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,328 +9,45 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Ajax test</title>
-
     <!-- Bootstrap core CSS -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/auto-complete.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="static/css/signin.css" rel="stylesheet">
-
-   <script src="static/js/jquery-1.9.0.js"></script>
-   <script src="static/js/script.js"></script>
-   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-   <script type="module" src="static/js/fetch.js"></script>
-   
-<style>
-   #customers {
-          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-          border-collapse: collapse;
-          width: 90%;
-          padding-left: 15px;
-        }
-        
-        #customers td, #customers th {
-          border: 1px solid #ddd;
-          padding: 8px;
-        }
-        
-        #customers tr:nth-child(even){background-color: #f2f2f2;}
-        
-        #customers tr:hover {background-color: #ddd;}
-        
-        #customers th {
-          
-          padding-top: 12px;
-          padding-bottom: 12px;
-          text-align: left;
-          background-color: #4CAF50;
-          color: white;
-        } 
-   </style>
-
-<style>  
-.loader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.hide-loader{
-display:none;
-}
-
-.show-loader {
-  display:block;
-}
-
-.hide-overlay {
-  display:none;
-}
-
-.show-overlay {
-  display:block;
-}
-
-#overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  cursor: pointer;
-}
-
-</style>
-   <script>
-     
-     let selected_config = new Array();
-      $(document).ready(function(){
-        
-        $('#loader').addClass("hide-loader");
-       
-        $("#btn11").click(function(){
-                        
-        var data_1 = {{ data | safe }};
-        
-        obj = JSON.stringify(data_1);
-        
-        swal({
-        title: "Are you sure?",
-        text: "Sending config commands to {{string_var}}, not reversible please double check and confirm!",
-        icon: "warning",
-        buttons: true,
-        dangerMode: true,
-        })
-        .then((willDelete) => {
-          if (willDelete) {
-
-          ////
-          $.ajax({url:"/result", data: {"data": obj }, success: function(res){
-            console.log(res);
-          // return res is an array 
-          var res_array = JSON.parse(res);
-          console.log(res_array)
-          $("#secret_field").append("<br> Return data is:  <br>" +  JSON.stringify(res_array));
-          // res_array.push(res_dict);
-          // console.log(res_dict);
-        //  
-          var col = [];
-          for (var i = 0; i < res_array.length; i++) {
-            for (var key in res_array[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
-        }
-         
-        // 
-        // CREATE DYNAMIC TABLE.
-        var table = document.createElement("table");
-            table.setAttribute("class", "w3-table-all");
-            
-            
-
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.setAttribute("class", "w3-green")
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
-
-        // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < res_array.length; i++) {
-
-            tr = table.insertRow(-1);
-
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = res_array[i][col[j]];
-            }
-        }
-
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-        var divContainer = document.getElementById("createtable");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-       
-        // reveal secret field
-
-        var info_str = "<br> USERNAME: {{ session["cli_username"] }} <br>PASSWORD: {{ session["cli_password"] }} ";
-            info_str = info_str + "<br>String variable:  {{ string_var }}";
-
-        $("#secret_field").append(info_str);
-
-          }}); //end of ajax call
-          ///   
-
-            swal("Done configration!", {
-              icon: "success",
-            });
-          } else {
-            swal("No configure is pushed!");
-          }
-      });
-
-        });  // end of button function
-
-
-    /////////////////// check select
-    $(".checkboxClass").click(function(){
-        let selectedCountry = new Array();
-        var n = $(".checkboxClass:checked").length;
-        if (n > 0){
-            $(".checkboxClass:checked").each(function(){
-                selectedCountry.push($(this).val());
-            });
-        }
-        selected_config = selectedCountry
-        console.log(selectedCountry);
-    });
-    /////////////////// btn12 
-    
-    $("#btn12").click(function(){
-                      
-                        console.log(selected_config)
-                        var data_1 = selected_config;
-                        
-                        obj = JSON.stringify(data_1);
-                        
-                        swal({
-                        title: "Are you sure?",
-                        text: "Sending config commands to {{string_var}}, not reversible please double check and confirm!",
-                        icon: "warning",
-                        buttons: true,
-                        dangerMode: true,
-                        })
-                        .then((willDelete) => {
-                          if (willDelete) {
-                            // $('#loader').addClass("show-loader");
-                            // $('#loader').removeClass("hide-loader");
-                            $('#overlay').addClass("show-overlay");
-                            $('#overlay').removeClass("hide-overlay");
-                        ////
-                        var data = {
-                        "ipaddress": JSON.stringify(["1.1.1.1"]),
-                         "package": JSON.stringify(selected_config),
-                       };
-
-                        obj = JSON.stringify(data);
-
-                        function your_func() {
-                          $.ajax({url:"/TechType_fix_config", data: {"data": obj }, success: function(res_str){
-                          console.log(res_str);
-                        
-                        // delay 5 secs to show the loader effect
-
-
-                          // return res is an array 
-                          var res_array = JSON.parse(res_str);
-                          console.log(res_array);
-                          $("#secret_field").empty();
-                          $("#secret_field").append("<br> Return data is:  <br>" +  JSON.stringify(res_array));
-                          // res_array.push(res_dict);
-                          // console.log(res_dict);
-                        //  
-                          
-                        // reveal secret field
-                
-                        var info_str = "<br> USERNAME: {{ session["cli_username"] }} <br>PASSWORD: {{ session["cli_password"] }} ";
-                            info_str = info_str + "<br>String variable:  {{ string_var }}";
-                 
-                        $("#secret_field").append(info_str);
-
-                        $('#overlay').addClass("hide-overlay");
-                        $('#overlay').removeClass("show-overlay");
-
-                          }}); //end of ajax call
-                          console.log("noop");
-                        }
-                        setTimeout(function() { your_func(); }, 2000);
-                        
-                          ///   
-                
-                            swal("Done configration!", {
-                              icon: "success",
-                            });
-                   
-
-                          } else {
-                            swal("No configure is pushed!");
-                            }
-                       });  //end of then
-
-    }); // end of button 12 function
-        
-  /////////////////// btn13
-  $("#btn13").click(function () {
-
-      fetchtest();
+    <link href="static/css/my_style.css" rel="stylesheet">
   
-      })  //end of btn13 function
-
+    <script src="static/js/jquery-1.9.0.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="static/js/fetch.js"></script>
   
-
-    }); // end of document ready
-      
+    <script src="static/js/auto-complete.min.js"></script>
+    <script type="text/javascript">
+      {% include "my_script.js" %}  <!--can use this method to get js that has jinja varialbes on here-->
+    </script>
+    <script type="text/javascript" src="static/data/data.json"></script>
   
-
-   </script>
-
-<script>
-  async function fetchtest() {
-
-    let response = await fetch('/fetch');
-
-    if (response.ok) { // if HTTP-status is 200-299
-      // get the response body (the method explained below)
-      let json = await response.text();
-      console.log(typeof (json))  // string
-      console.log("json out is here...");
-      console.log(json);
-      $("#fetch_result").html(json)  
-    } else {
-      alert("HTTP-Error: " + response.status);
-    }
-  
-  }
-</script>
-
-
+    <title>Ajax test</title>
 </head>
 
 <body>
-<div class="loader"  id="loader">
-    <script>
-          
-        $('#loader').addClass("hide-loader");
-        $('#loader').removeClass("show-loader");
-      </script>
+<div  id="navbar" class="navbar w3-bar w3-card-4 w3-black" style="position: fixed;top: 0;">
+  <a href="/" class="w3-bar-item w3-button ">Home</a>
+  <a href="/hello" class="w3-bar-item w3-button">Hello api</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+<div class="loader" id="loader">
+  <script>
+    $('#loader').addClass("hide-loader");
+    $('#loader').removeClass("show-loader");
+  </script>
 </div>
 
-<div class="w3-container"  >  
+<div class="w3-container" style="margin-top: 30px;">  
 
 <div class="w3-cell-row">
+
   <div class="w3-container w3-cell" style="width: 15%">
   </div>
   <div class="w3-container w3-cell">
@@ -351,18 +68,22 @@ display:none;
 </div>
 <div class=" w3-card-4"  style="width:70%" > <!--make card smaller not on entire screen-->
   <span>
-      <a href="/array_test">array test</a>
-
-    <button class="w3-button w3-green w3-hover-red w3-right" style="margin-right: 10px; margin-top: 10px; width: 200px;" onclick="reload_page()">  Reload page </button>
-    
+      <a class="w3-xlarge" href="/array_test">array test</a>    
   </span>
-<h2>fetch</h2>
+<hr>  
+<h2 class="w3-center">fetch test </h2>
 <div style="margin-left: 20px;">
 <button id="btn13" style="margin-right: 10px" class= "w3-button w3-green w3-hover-red">Fetch from /fetch using fetch</button>
 </div>
+
 <div id="fetch_result"></div>
 
-<h2> autocomplete test</h2>
+<hr>
+<h2 class="w3-center"> autocomplete test</h2>
+
+<p class="w3-medium"> option data is loaded from /static/data/data.json, click on submit, input value is sent to /form_process, then it got returned
+  back. 
+</p>
   <!-- start autocomplete test -->
   <form action="/form_process" autocomplete="off" class="pure-form" style="border-top: 1px solid #eee;border-bottom:1px solid #eee;background:#fafafa;margin:30px 0;padding:20px 10px;text-align:center">
     <input id="hero-demo" autofocus type="text" name="q" placeholder="Programming languages ..." style="width:100%;max-width:600px;outline:0">
@@ -373,6 +94,7 @@ display:none;
   {%endif%}
     <br>
   <!-- end autocomplete test -->
+   <hr>
     <p class="w3-large">Data received from server</p>
 
     <table id="customers" style="table-layout: auto; position: relative; left: 30px;" class="w3-border">
@@ -468,32 +190,9 @@ JQuery Ajax:
 </div> <!-- end of container-->
 
 
+</body>
 
-<script src="static/js/auto-complete.min.js"></script>
 
-<script type="text/javascript" src="static/data/data.json"></script>
 
-<script>
- console.log(data);
- 
-  var demo1 = new autoComplete({
-              
-              selector: '#hero-demo',
-              minChars: 1,
-              source: function(term, suggest){
-                  term = term.toLowerCase();
-                  var choices = data;  
-                                  
-                  var suggestions = [];
-                  for (i=0;i<choices.length;i++)
-                      if (~choices[i].toLowerCase().indexOf(term)) suggestions.push(choices[i]);
-                  suggest(suggestions);
-              }
-          });
-  
-  
-  </script>
-
-  </body>
 </html>
 

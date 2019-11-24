@@ -3,10 +3,23 @@ from flask import Flask,render_template, request,json,jsonify, session
 from flask import Blueprint, render_template, redirect, url_for, request, flash, session, send_file, send_from_directory
 from collections import OrderedDict
 import re
+from flask_restful import Resource, Api
+
 
 app = Flask(__name__)
+api = Api(app)
 
 
+# Test API
+
+class HelloWorld(Resource):
+    def get(self):
+        message = "<pre>class HelloWorld(Resource): def get(self):  return {'hello': 'world' }</pre>"
+        return {'hello': 'world', 'message': json.dumps(message),}
+
+api.add_resource(HelloWorld, '/hello')
+ 
+# 
 app.config['SECRET_KEY'] = 'the random string' 
 
 @app.route('/result')
@@ -133,6 +146,8 @@ def form_process():
     data_from_form_input = request.args.get('q')
     print(data)
     flash("got data")
+    # here data exists because it needs to feed the earlier testing with form. otherwise the data_from_form_input is the data obtained from the
+    # auto complete input then returned back to apphome page
     return render_template('apphome.html', form_data = data_from_form_input , data=data, string_var="")
 
 
@@ -162,7 +177,7 @@ def array_test():
                 num = re.findall(r'\d+', key)[0]
                 print(num)
                 # ord_dict[]
-            
+                ord_dict["xcid"] = item[num]
                 ord_dict[num] = item[num]
                 ord_dict["frequency"] = item["frequency"]
                 ord_dict["och_trail"] = item["och_trail"]
@@ -170,12 +185,9 @@ def array_test():
                 ord_dict["tech_az"] = item["tech_az"]
                 ord_dict["tech_za"] = item["tech_za"]
 
-          data2.append(ord_dict) 
+                data2.append(ord_dict) 
 
-          
-
-        
-        data2.sort(key=(lambda x: x.keys()[0]))
+        data2.sort(key=(lambda x: x["xcid"]))
         print(data2)
         return json.dumps(data2)
         
