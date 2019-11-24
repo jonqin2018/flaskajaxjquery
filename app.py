@@ -74,11 +74,6 @@ def fetch():
             }
 
            ]
-    string_var = "192.168.1.1"
-
-    session["cli_username"] = "cli_username_value"
-    session["cli_password"] = "cli_password_value"
-
     return jsonify(data)
 
 
