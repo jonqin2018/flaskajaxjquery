@@ -34,9 +34,7 @@
 
            });  //end of btn13 function
          });
- </script>
 
-<script>
         async function array_test() {
       
           const url = '/array_test';
@@ -67,12 +65,12 @@
               
               }  // end of btn14
       
-      </script>
-<script>
+
         function reload_page() {
           window.location.href = "/";
         }
-      </script>
+</script>
+
   </head>
 
   <body>
@@ -81,8 +79,10 @@
           <a href="#" class="w3-bar-item w3-button">Link 1</a>
           <a href="#" class="w3-bar-item w3-button">Link 2</a>
           <a href="#" class="w3-bar-item w3-button">Link 3</a>
-        </div>    
+        </div>
+
 <div class="container" style="margin-top: 30px;">
+  <div class="w3-card-4" style="width: 80%; margin-left: 15%;"> 
 
     <div id="original">
         <p class="w3-large">Original data: {{ data }}</p>
@@ -94,11 +94,13 @@
     </div>
 
     <button id="btn14" class="w3-button w3-green w3-hover-red">submit</button>
-    <button class="w3-button w3-green w3-hover-red w3-right" style="margin-right: 10px; margin-top: 10px; width: 200px;" onclick="reload_page()">  Reload page </button>
-</div>
+    </div>
+    <br>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+  </div>   <!--end of card-->
   </body>
 </html>
 
