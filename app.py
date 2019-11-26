@@ -190,5 +190,11 @@ def array_test():
         data1 = []
         sorted_data1= []
         return render_template('array_test.html', data = data1 ,  sorted_data = sorted_data1)
+
+@app.route('/doc')
+def doc():
+    
+  return  render_template('doc.html')
+
 if __name__=="__main__":
     app.run(debug=True, port=5001)
