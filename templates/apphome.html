@@ -15,7 +15,7 @@
     <!-- Custom styles for this template -->
     <link href="static/css/signin.css" rel="stylesheet">
     <link href="static/css/my_style.css" rel="stylesheet">
-  
+    <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
     <script src="static/js/jquery-1.9.0.js"></script>
     <script src="static/js/script.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -32,10 +32,11 @@
 
 <body>
 <div  id="navbar" class="navbar w3-bar w3-card-4 w3-black" style="position: fixed;top: 0;">
+  <a href="/" class="topnav-icons fa fa-home w3-left w3-bar-item w3-button" title="Home"></a>
   <a href="/" class="w3-bar-item w3-button ">Home</a>
   <a href="/hello" class="w3-bar-item w3-button">Hello api</a>
   <a href="/doc" class="w3-bar-item w3-button">Documentation</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="/easyui" class="w3-bar-item w3-button">EasyUi</a>
   <div class="w3-right"><input type="text" class="w3-bar-item w3-input" placeholder="Search..">
   <a href="#" class="w3-bar-item w3-button w3-green">Go</a>
   </div>
@@ -83,7 +84,7 @@
   <br>
   <div class="w3-card-2" style="width: 90%; margin-left: 5%; margin-top: 20px">
   <div class="w3-center"><a class="w3-xlarge w3-center" href="/array_test">array test</a> </div> 
-  <pre>
+  <pre class="w3-leftbar w3-rightbar">
     GET to backend route /array_test, which renders to array_test.html, 
     where data is submitted using async fetch function. 
 
@@ -107,11 +108,11 @@
   </div>  <!--end of array test -->
 
 
-<div class="w3-card-2" style="width: 90%; margin-left: 5%;">
+<div class="w3-card" style="width: 90%; margin-left: 5%;">
 
 <h2 class="w3-center">fetch test </h2>
 
-<pre class="w3-medium " style="background: lightgrey;"> use fetch function to grab data from flask:
+<pre class="w3-medium " > use fetch function to grab data from flask:
     async function fetchtest() {
 
       let response = await fetch('/fetch');

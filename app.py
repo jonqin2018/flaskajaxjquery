@@ -193,8 +193,14 @@ def array_test():
 
 @app.route('/doc')
 def doc():
-    
   return  render_template('doc.html')
+
+@app.route("/easyui")
+def easyui():
+  return render_template('easyui.html')
+
+    
+
 
 if __name__=="__main__":
     app.run(debug=True, port=5001)
