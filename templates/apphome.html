@@ -26,14 +26,13 @@
       {% include "my_script.js" %}  <!--can use this method to get js that has jinja varialbes on here-->
     </script>
     <script type="text/javascript" src="static/data/data.json"></script>
-  
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>Ajax test</title>
 </head>
 
 <body>
 <div  id="navbar" class="navbar w3-bar w3-card-4 w3-black" style="position: fixed;top: 0;">
-  <a href="/" class="topnav-icons fa fa-home w3-left w3-bar-item w3-button" title="Home"></a>
-  <a href="/" class="w3-bar-item w3-button ">Home</a>
+  <a href="/" class=" fas fa-home w3-bar-item w3-button" style='font-size:24px'></a>
   <a href="/hello" class="w3-bar-item w3-button">Hello api</a>
   <a href="/doc" class="w3-bar-item w3-button">Documentation</a>
   <a href="/easyui" class="w3-bar-item w3-button">EasyUi</a>
@@ -47,6 +46,7 @@
   <a href="#services">Services</a>
   <a href="#clients">Clients</a>
   <a href="#contact">Contact</a>
+
 </div>
 
 <div class="loader" id="loader">
