@@ -31,7 +31,7 @@
 </head>
 
 <body>
-<div  id="navbar" class="navbar w3-bar w3-card-4 w3-black" style="position: fixed;top: 0;">
+<div  id="navbar" class="navbar topnav w3-bar w3-card-4 w3-black" style="position: fixed;top: 0; border-radius: 0px;">
   <a href="/" class=" fas fa-home w3-bar-item w3-button" style='font-size:24px'></a>
   <a href="/hello" class="w3-bar-item w3-button">Hello api</a>
   <a href="/doc" class="w3-bar-item w3-button">Documentation</a>
@@ -41,8 +41,8 @@
   </div>
 </div>
 
-<div class="sidenav w3-card-4">
-  <button class="w3-button w3-green w3-hover-red " style="width: 100%;" onclick="on()">Turn on overlay</button>
+<div class="sidenav w3-card-4" style="font-family: Segoe UI,Arial,sans-serif;">
+  <a href="#services" onclick="on()" >Turn on overlay</a>
   <a href="#services">Services</a>
   <a href="#clients">Clients</a>
   <a href="#contact">Contact</a>
@@ -60,7 +60,7 @@
 
 <div class="w3-cell-row">
 
-  <div class="w3-container w3-cell" style="width: 15%">
+  <div class="w3-container w3-cell" style="width: 10%">
   </div>
   <div class="w3-container w3-cell">
 
@@ -79,12 +79,12 @@
   <button class="w3-button w3-green w3-hover-red w3-right w3-bottom" onclick="off()">Turn off overlay effect</button>
 </div>
 
-
-
   <br>
-  <div class="w3-card-2" style="width: 90%; margin-left: 5%; margin-top: 20px">
+  <div class="w3-card-2" style="width: 70%; margin-left: 5%; margin-top: 20px">
   <div class="w3-center"><a class="w3-xlarge w3-center" href="/array_test">array test</a> </div> 
-  <pre class="w3-leftbar w3-rightbar">
+
+  <div class="w3-code w3-margin jsHigh notranslate ">
+  <pre>
     GET to backend route /array_test, which renders to array_test.html, 
     where data is submitted using async fetch function. 
 
@@ -104,14 +104,15 @@
       $('#sorted').html(JSON.stringify(json));
 
   </pre> 
-  
-  </div>  <!--end of array test -->
+  </div>  <!--end of code-->
+  <br>
+</div> <!--end of array test -->
 
-
-<div class="w3-card" style="width: 90%; margin-left: 5%;">
+<div class="w3-card-2" style="width: 70%; margin-left: 5%;">
 
 <h2 class="w3-center">fetch test </h2>
 
+<div class="w3-code w3-margin jsHigh notranslate ">
 <pre class="w3-medium " > use fetch function to grab data from flask:
     async function fetchtest() {
 
@@ -129,19 +130,20 @@
       }
      
 </pre>
+</div> <!--end of code-->
 
 <div style="margin-left: 20px;">
 <button id="btn13" style="margin-right: 10px" class= "w3-button w3-green w3-hover-red">Fetch from /fetch using fetch</button>
 </div>
 <bdr>
-<p class="w3-text-blue"> return data: <span class="w3-text-black" > <div id="fetch_result"></div>  </span>  </p> 
-
+<p class="w3-text-blue"> &nbsp;&nbsp;&nbsp;&nbsp;Return data: <span class="w3-text-black" > <div id="fetch_result"></div>  </span>  </p> 
+</br>
 </div> <!-- end of fetch test card-->
 
-<div class="w3-card-2 w3-margin: 10px" style="width: 90%; margin-left: 5%;">
+<div class="w3-card-2 w3-margin: 10px" style="width: 70%; margin-left: 5%;">
 <h2 class="w3-center"> autocomplete test</h2>
 
-<p class="w3-medium"> option data is loaded from /static/data/data.json, click on submit, input value is sent to /form_process, then it got returned
+<p class="w3-medium w3-margin"> option data is loaded from /static/data/data.json, click on submit, input value is sent to /form_process, then it got returned
   back. 
 </p>
   <!-- start autocomplete test -->
@@ -150,12 +152,13 @@
     <button class="w3-button w3-blue" >submit</button>
   </form>
   <script src="static/js/autocomplete.js"></script>
-   <p class="w3-text-blue"> return data: <span class="w3-text-black" > {% if form_data -%} {{form_data -}} {%endif%}   </span>  </p> 
-
+   <p class="w3-text-blue"> &nbsp;&nbsp;&nbsp;&nbsp;Return data: <span class="w3-text-black" > {% if form_data -%} {{form_data -}} {%endif%}   </span>  </p> 
+   <br>
   <!-- end autocomplete test -->
   </div> <!--end of autocomplete card-->  
 
-    <p class="w3-large">Data received from server</p>
+  <div class="w3-card-2" style="width: 70%; margin-left: 5%;">
+    <p class="w3-large w3-margin">Data received from server</p>
 
     <table id="customers" style="table-layout: auto; position: relative; left: 30px;" class="w3-border">
         <tr>
@@ -196,6 +199,8 @@
 <br>
 <div class="w3-panel w3-red w3-card-4 w3-margin" id="secret_field"> </div>
 <div class ="w3-panel w3-card-4 w3-margin" id="createtable"></div>
+
+
 
 <p class="w3-large w3-margin" > Data is hosted on first page ("/"), Flask backend returns json and string test data and renders them to /apphome.html page. </p>
     
@@ -242,8 +247,11 @@ JQuery Ajax:
     </pre>
 </div> <!-- end of code -->
       <p class="w3-large w3-margin">return data is in res</p>
+
       
 <br>
+
+</div> <!--end of send data card-->  
 
 </div> <!--end of cell-->
 </div>  <!-- end of cell row-->
