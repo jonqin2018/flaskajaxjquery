@@ -199,6 +199,13 @@ def doc():
 def easyui():
   return render_template('easyui.html')
 
+@app.route("/test")
+def test():
+  return render_template('test.html')
+
+@app.route("/test_js")
+def test_js():
+  return render_template("test.js")
     
 
 

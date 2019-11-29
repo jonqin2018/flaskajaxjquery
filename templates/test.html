@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Bootstrap core CSS -->
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/auto-complete.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="static/css/signin.css" rel="stylesheet">
+<link href="static/css/my_style.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <script src="static/js/jquery-1.9.0.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="static/js/fetch.js"></script>
+  
+    <script src="static/js/auto-complete.min.js"></script>
+    <script type="text/javascript">
+      {% include "my_script.js" %}  <!--can use this method to get js that has jinja varialbes on here-->
+    </script>
+    <script type="text/javascript" src="static/data/data.json"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+  <!-- add mocha css, to show results -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <!-- add mocha framework code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd'); // minimal setup
+  </script>
+  <!-- add chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    // chai has a lot of stuff, let's make assert global
+    let assert = chai.assert;
+  </script>
+</head>
+
+<body>
+
+        <div  id="navbar" class="navbar topnav w3-bar w3-card-4 w3-black" style="position: fixed;top: 0; border-radius: 0px;">
+                <a href="/" class=" fas fa-home w3-bar-item w3-button" style='font-size:24px'></a>
+                <a href="/hello" class="w3-bar-item w3-button">Hello api</a>
+                <a href="/doc" class="w3-bar-item w3-button">Documentation</a>
+                <a href="/easyui" class="w3-bar-item w3-button">EasyUi</a>
+                <div class="w3-right"><input type="text" class="w3-bar-item w3-input" placeholder="Search..">
+                <a href="#" class="w3-bar-item w3-button w3-green">Go</a>
+                </div>
+              </div>
+              
+              <div class="sidenav w3-card-4" style="font-family: Segoe UI,Arial,sans-serif;">
+                <a href="# onclick="on()" >Turn on overlay</a>
+                <a href="/test">test</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+              
+              </div>
+        <div class="w3-container" style="margin-top: 30px;">  
+
+                <div class="w3-cell-row">
+
+                        <div class="w3-container w3-cell" style="width: 10%">
+                        </div>
+                
+                <div class="w3-container w3-cell">
+                        <div class="w3-card-2" style="width: 70%; margin-left: 5%; margin-top: 20px"> 
+
+
+  <script>
+    function pow(x, n) {
+        return 8;/* function code is to be written, empty now */
+    }
+  </script>
+
+  <!-- the script with tests (describe, it...) -->
+  <script src="{{ url_for('test_js') }}"></script>
+
+  <!-- the element with id="mocha" will contain test results -->
+  <div id="mocha"></div>
+
+  <!-- run tests! -->
+  <script>
+    mocha.run();
+  </script>
+
+
+<div class="w3-code w3-margin jsHigh notranslate">
+        <pre>
+        
+        test.js
+        describe("pow", function() {
+
+            it("raises to n-th power", function() {
+              assert.equal(pow(2, 3), 8);
+            });
+          
+          });
+
+        test html
+        
+        &lt;script>
+                function pow(x, n) {
+                    return 8;/* function code is to be written, empty now */
+                }
+                &lt;/script>
+            
+              <!-- the script with tests (describe, it...) -->
+              &lt;script src="{{ url_for('test_js') }}">&lt;/script>
+            
+              <!-- the element with id="mocha" will contain test results -->
+              &lt;div id="mocha">&lt;/div>
+            
+              <!-- run tests! -->
+              &lt;script>
+                mocha.run();
+                &lt;/script>
+      </pre>
+</div> <!--end of code-->
+
+
+ </div> <!--end card -->
+ </div> <!--end cell 2-->
+  </div> <!--end row-->
+  </div> <!--end container-->
+</body>
+
+</html>
