@@ -33,11 +33,19 @@
 </head>
 
 <body>
-<div  id="navbar" class="navbar topnav w3-bar w3-card-4 w3-black" style="position: fixed;top: 0; border-radius: 0px;">
+<div  class="navbar topnav w3-bar w3-card-4 w3-black" style="border-radius: 0px;">
   <a href="/" class=" fas fa-home w3-bar-item w3-button" style='font-size:24px'></a>
   <a href="/hello" class="w3-bar-item w3-button">Hello api</a>
   <a href="/doc" class="w3-bar-item w3-button">Documentation</a>
   <a href="/easyui" class="w3-bar-item w3-button">EasyUi</a>
+  <div class="w3-dropdown-hover" style="position: fixed;">
+    <span><button class="w3-button" style="padding-right: 2px;">Dropdown</button><i class="fa fa-caret-down"></i></span>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="#" class="w3-bar-item w3-button w3-black">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button w3-black ">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button w3-black">Link 3</a>
+    </div>
+  </div>
   <div class="w3-right"><input type="text" class="w3-bar-item w3-input" placeholder="Search..">
   <a href="#" class="w3-bar-item w3-button w3-green">Go</a>
   </div>
