@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="static/favicon.ico">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Bootstrap core CSS -->
     <!-- <link href="static/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -54,7 +54,7 @@
   <a href="/doc" class="w3-bar-item w3-button">Documentation</a>
   <a href="/easyui" class="w3-bar-item w3-button">EasyUi</a>
   <div class="w3-dropdown-hover" style="position: fixed;">
-    <span><button class="w3-button" style="padding-right: 2px;">Dropdown</button><i class="fa fa-caret-down"></i></span>
+    <button class="w3-button" style="padding-right: 2px;">Dropdown <i style="margin-top: 3px;" class="fa fa-caret-down"></i></button>
     <div class="w3-dropdown-content w3-bar-block w3-card-4">
       <a href="#" class="w3-bar-item w3-button w3-black">Link 1</a>
       <a href="#" class="w3-bar-item w3-button w3-black ">Link 2</a>
@@ -76,14 +76,12 @@
 </div>
 
 <div class="sidenav w3-card-4" style="font-family: Segoe UI,Arial,sans-serif;">
-  <a href="# onclick="on()" >Turn on overlay</a>
+  <a href="#" onclick="on()" >Turn on overlay</a>
   <a href="/test">test</a>
   <a href="#clients">Clients</a>
   <a href="#contact">Contact</a>
 
-  
-  
-</div>
+  </div>
 
 
 <div class="loader" id="loader">
@@ -102,7 +100,8 @@
   <div class="w3-container w3-cell">
 
 <div id="overlay"> 
-  <script>
+
+    <script>
         function on() {
         document.getElementById("overlay").style.display = "block";
       };
@@ -111,7 +110,8 @@
         document.getElementById("overlay").style.display = "none";
       }
         
-  </script>
+  </script>  
+
   <div class="loader w3-center" style="display: block;"></div>
   <button class="w3-button w3-green w3-hover-red w3-right w3-bottom" onclick="off()">Turn off overlay effect</button>
 </div>
