@@ -51,7 +51,7 @@ $("#createtable").empty();
 
 slot = display_data[0]['card_id'].split('/')[0];
 
-$("#createtable").append('<button type="button" class="collapsible">' + slot + '</button>');
+$("#createtable").append('<button type="button" class="collapsible"> SLOT ' + slot + '</button>');
 
 for(let i = 0; i < display_data.length; i++){
 
@@ -67,7 +67,7 @@ $("#createtable").append('<div class="content"><p>' + display_data[i]['card_id']
 
     slot = display_data[i]['card_id'].split('/')[0];
     console.log( "in else", slot)
-    $("#createtable").append('<button type="button" class="collapsible">' + slot + '</button>');
+    $("#createtable").append('<button type="button" class="collapsible"> SLOT ' + slot + '</button>');
     $("#createtable").append('<div class="content"><p>' + display_data[i]['card_id'] + '   card type ' + display_data[i]['card_type']   +'</p></div>');
   }
 
