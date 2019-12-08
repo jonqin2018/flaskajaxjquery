@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="static/js/jquery-1.9.0.js"></script>
 <style>
 .collapsible {
-  background-color: #777;
+  background-color: green;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -29,9 +30,14 @@
 </style>
 
 </head>
+
+
 <body>
 
-<h2>Slot Card</h2>
+
+<div class="w3-bar"> Selet slot/card then click on Submit <button id="config_submit" class="w3-btn w3-black w3-margin-left" onclick="config_profile()">Submit</button> </div>
+
+
 <script>
 var display_data = {{data1|safe }};
 console.log(display_data);
@@ -61,14 +67,21 @@ if (display_data[i]['card_id'].split('/')[0] == slot) {
 
     console.log("in equal" , slot)
 
-$("#createtable").append('<div class="content"><p>' + display_data[i]['card_id'] + 'card type ' + display_data[i]['card_type']   +'</p></div>');
+var html = '<div class="content">' + 
+           '<input type="checkbox" name="card_id" value=' + display_data[i]["card_id"] +  '>' +
+           '<span>  &nbsp;  </span>' +
+            display_data[i]['card_id'] + '<span>  &nbsp;  </span>' +
+            'card type ' + display_data[i]['card_type'] + '&nbsp;' +
+            
+            '</div>'
+    $("#createtable").append(html);
 
 } else {
 
     slot = display_data[i]['card_id'].split('/')[0];
     console.log( "in else", slot)
     $("#createtable").append('<button type="button" class="collapsible"> SLOT ' + slot + '</button>');
-    $("#createtable").append('<div class="content"><p>' + display_data[i]['card_id'] + '   card type ' + display_data[i]['card_type']   +'</p></div>');
+    $("#createtable").append(html);
   }
 
 
@@ -96,8 +109,21 @@ for (i = 0; i < coll.length; i++) {
   });
   
 }
+
 </script>
 
+<script>
+        $("#config_submit").click(function(){
+                    var favorite = [];
+                    $.each($("input[name='card_id']:checked"), function(){
+                        favorite.push($(this).val());
+                    });
+                    alert("Checked box is : " + favorite.join(", "));
+                });
+        
+        
+        
+        </script>
 
 </body>
 </html>
