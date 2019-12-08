@@ -246,6 +246,256 @@ def exceptions(e):
                   tb)
     return "Internal Server Error", 500
 
+@app.route("/d3")
+def d3():
+  return render_template('d3.html')
+
+
+@app.route("/tree_view")
+def tree_view():
+  data =  [
+    {
+        "num": "1",
+        "card_id": "5/6",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "2",
+        "card_id": "8/6",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "3",
+        "card_id": "10/6",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "4",
+        "card_id": "5/8",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "5",
+        "card_id": "8/8",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "6",
+        "card_id": "2/10",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "7",
+        "card_id": "8/10",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "8",
+        "card_id": "3/12",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "9",
+        "card_id": "5/12",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "10",
+        "card_id": "8/12",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "11",
+        "card_id": "3/16",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "12",
+        "card_id": "6/6",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "13",
+        "card_id": "6/4",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "14",
+        "card_id": "2/14",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "15",
+        "card_id": "9/14",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "16",
+        "card_id": "4/14",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "17",
+        "card_id": "6/12",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "18",
+        "card_id": "2/12",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "19",
+        "card_id": "1/12",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "20",
+        "card_id": "7/16",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "21",
+        "card_id": "10/8",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "22",
+        "card_id": "9/16",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "23",
+        "card_id": "5/11",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "24",
+        "card_id": "10/16",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "25",
+        "card_id": "10/4",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "26",
+        "card_id": "10/10",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "27",
+        "card_id": "6/14",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "28",
+        "card_id": "5/16",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "29",
+        "card_id": "6/16",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "30",
+        "card_id": "8/16",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "31",
+        "card_id": "8/2",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "32",
+        "card_id": "7/4",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "33",
+        "card_id": "4/8",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "34",
+        "card_id": "4/6",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "35",
+        "card_id": "3/8",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "36",
+        "card_id": "2/6",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "37",
+        "card_id": "11/12",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "38",
+        "card_id": "11/4",
+        "card_type": "130SCX10"
+    },
+    {
+        "num": "39",
+        "card_id": "11/6",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "40",
+        "card_id": "11/8",
+        "card_type": "260SCX2"
+    },
+    {
+        "num": "41",
+        "card_id": "11/14",
+        "card_type": "130SCX10"
+    }
+]
+
+  data_sorted = []
+  
+  data.sort(key=(lambda x: int(x["card_id"].split("/")[0])))
+  # data was sorted by slot
+  # print(json.dumps(data, indent=4))
+  # get slot number put in array
+  slot_card_array = []
+  slot_number = int(data[0]['card_id'].split("/")[0])
+    
+  for item in data:
+    if slot_number != int(item['card_id'].split("/")[0]):
+      #deal with slot_card-array previously stored items
+      slot_card_array.sort(key=(lambda x: int(x["card_id"].split("/")[1])))
+      for x in slot_card_array:
+        data_sorted.append(x)
+      slot_card_array = []
+      slot_number = int(item['card_id'].split("/")[0])
+      #append this first item in next slot 
+      slot_card_array.append(item)
+
+    else:  
+      slot_card_array.append(item)
+    
+  #deal with last slot as there's no trigger to add the element
+  slot_card_array.sort(key=(lambda x: int(x["card_id"].split("/")[1])))  
+  for x in slot_card_array:
+    data_sorted.append(x)
+  
+   
+  print(json.dumps(data_sorted, indent=4))
+  print("size after sorted ----->", len(data_sorted))
+  print("size original ----->", len(data))
+  return render_template('tree_view.html', data1=json.dumps(data_sorted))
+
+
 
 
 if __name__=="__main__":

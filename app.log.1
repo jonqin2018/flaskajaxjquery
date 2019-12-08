@@ -1,4 +1,48 @@
-[2019-Dec-02 21:22] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 19:48] 127.0.0.1 GET http /tree_view? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 496, in tree_view
+    return render_template('tree_view.html', data=data_sorted)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/root/flask/PythonFlaskjQueryAjax/templates/tree_view.html", line 40, in template
+    {{slot_number = item['card_id'].split('/')[0]}}
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 199, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+
+[2019-Dec-07 19:48] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -12,3 +56,1380 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
+[2019-Dec-07 19:48] 127.0.0.1 GET http /tree_view? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 496, in tree_view
+    return render_template('tree_view.html', data=data_sorted)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/root/flask/PythonFlaskjQueryAjax/templates/tree_view.html", line 40, in template
+    {{slot_number = item['card_id'].split('/')[0]}}
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 199, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+
+[2019-Dec-07 19:48] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:49] 127.0.0.1 GET http /tree_view? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 496, in tree_view
+    return render_template('tree_view.html', data=data_sorted)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/root/flask/PythonFlaskjQueryAjax/templates/tree_view.html", line 40, in template
+    {{slot_number = item['card_id'].split('/')[0]}}
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 199, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+
+[2019-Dec-07 19:49] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:50] 127.0.0.1 GET http /tree_view? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 496, in tree_view
+    return render_template('tree_view.html', data=data_sorted)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/root/flask/PythonFlaskjQueryAjax/templates/tree_view.html", line 46, in template
+    {{slot_number = item['card_id'].split('/')[0]}}
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 199, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+
+[2019-Dec-07 19:50] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:51] 127.0.0.1 GET http /tree_view? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 496, in tree_view
+    return render_template('tree_view.html', data=data_sorted)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/root/flask/PythonFlaskjQueryAjax/templates/tree_view.html", line 46, in template
+    {{slot_number = item['card_id'].split('/')}}
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 199, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+
+[2019-Dec-07 19:51] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:51] 127.0.0.1 GET http /tree_view? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 496, in tree_view
+    return render_template('tree_view.html', data=data_sorted)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/root/flask/PythonFlaskjQueryAjax/templates/tree_view.html", line 46, in template
+    {{slot_number = item['card_id'].split('/')}}
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 199, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+
+[2019-Dec-07 19:51] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:52] 127.0.0.1 GET http /tree_view? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 496, in tree_view
+    return render_template('tree_view.html', data=data_sorted)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/root/flask/PythonFlaskjQueryAjax/templates/tree_view.html", line 41, in template
+    {{slot_number = item['card_id'].split('/')}}
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 199, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+
+[2019-Dec-07 19:52] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:52] 127.0.0.1 GET http /tree_view? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 496, in tree_view
+    return render_template('tree_view.html', data=data_sorted)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/root/flask/PythonFlaskjQueryAjax/templates/tree_view.html", line 41, in template
+    {{slot_number = item['card_id'].split('/')}}
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 199, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+
+[2019-Dec-07 19:52] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:53] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 19:53] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:53] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 19:53] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:54] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 19:54] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:54] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 19:54] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:57] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 19:57] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:57] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-07 19:57] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 19:57] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:59] 127.0.0.1 GET http /tree_view? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 496, in tree_view
+    return render_template('tree_view.html', data=json.dumps(data_sorted))
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/Users/root/flask/PythonFlaskjQueryAjax/templates/tree_view.html", line 36, in top-level template code
+    var display_data = {{JSON.parse(data)}};
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'JSON' is undefined
+
+[2019-Dec-07 19:59] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 19:59] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 19:59] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:03] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:03] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:03] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:03] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:06] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:06] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:07] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:07] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:07] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:07] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:08] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:08] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:08] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:08] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:09] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:09] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:09] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:09] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:11] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:11] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:11] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:11] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:11] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:11] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:12] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:12] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:13] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:13] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:14] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:14] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:23] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:23] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:23] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:23] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:25] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:25] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:30] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:30] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:31] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:31] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:32] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:32] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:32] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:34] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:34] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:34] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:39] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:39] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:39] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:40] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:40] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:40] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:41] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:41] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:41] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:41] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:41] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:41] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:41] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:41] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:41] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:42] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:42] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:42] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:43] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:43] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:43] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:44] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:44] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:44] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:44] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:44] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:44] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:46] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:46] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:46] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:47] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:47] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:47] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:58] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:58] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:58] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:58] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:58] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:58] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:59] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:59] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:59] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:59] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:59] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:59] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 20:59] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 20:59] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 20:59] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:08] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:08] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:08] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:09] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:09] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:09] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:11] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:11] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:11] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:12] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:12] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:12] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:13] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:13] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:13] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:24] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:24] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:24] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:35] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:35] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:35] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:35] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:37] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:37] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:37] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:37] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:37] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:37] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:39] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:39] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:39] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:42] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:42] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:42] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:43] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:43] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:43] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-07 21:44] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:44] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK

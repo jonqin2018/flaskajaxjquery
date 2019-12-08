@@ -1,8 +1,4 @@
-[2019-Dec-02 21:22] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:23] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:23] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:23] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:23] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 21:44] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -16,7 +12,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:23] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 21:45] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:45] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:45] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -30,8 +28,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:23] 127.0.0.1 GET http /hello? 200 OK
-[2019-Dec-02 21:23] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 21:46] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:46] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:46] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -45,8 +44,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:23] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:23] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 21:49] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:49] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:49] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -60,32 +60,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:23] 127.0.0.1 GET http /easyui? 200 OK
-[2019-Dec-02 21:23] 127.0.0.1 GET http /static/css/images/combo_arrow.png? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-02 21:23] 127.0.0.1 GET http /static/css/images/blank.gif? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-02 21:23] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 21:53] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:53] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:53] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -99,8 +76,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:23] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:23] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 21:59] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:59] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:59] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -114,9 +92,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:23] 127.0.0.1 GET http /fetch? 200 OK
-[2019-Dec-02 21:24] 127.0.0.1 GET http /form_process?q= 200 OK
-[2019-Dec-02 21:24] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 21:59] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 21:59] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 21:59] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -130,10 +108,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:24] 127.0.0.1 GET http /result?data=%5B%7B%22IP%22%3A%221.1.1.1%22%2C%22CONFIG1%22%3A%22blah%22%2C%22CONFIG2%22%3A%22bleh%22%7D%2C%7B%22IP%22%3A%222.2.2.2%22%2C%22CONFIG1%22%3A%22blah2%22%2C%22CONFIG2%22%3A%22bleh2%22%7D%2C%7B%22IP%22%3A%223.3.3.3%22%2C%22CONFIG1%22%3A%22blah3%22%2C%22CONFIG2%22%3A%22bleh3%22%7D%5D 200 OK
-[2019-Dec-02 21:24] 127.0.0.1 GET http /TechType_fix_config?data=%7B%22ipaddress%22%3A%22%5B%5C%221.1.1.1%5C%22%5D%22%2C%22package%22%3A%22%5B%5D%22%7D 200 OK
-[2019-Dec-02 21:28] 127.0.0.1 GET http /form_process?q= 200 OK
-[2019-Dec-02 21:28] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:05] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:05] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:05] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -147,23 +124,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:29] 127.0.0.1 GET http /form_process?q= 200 OK
-[2019-Dec-02 21:29] 127.0.0.1 GET http /static/favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-02 21:29] 127.0.0.1 GET http /form_process?q= 200 OK
-[2019-Dec-02 21:29] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-02 21:29] 127.0.0.1 GET http /array_test? 200 OK
-[2019-Dec-02 21:29] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:08] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:08] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:08] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -177,11 +140,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:29] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:30] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:30] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:30] 127.0.0.1 GET http /array_test? 200 OK
-[2019-Dec-02 21:30] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:09] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:09] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:09] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -195,12 +156,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:30] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:30] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:30] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:30] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /array_test? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:11] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:11] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:11] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -214,8 +172,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:31] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:11] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:11] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:11] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -229,7 +188,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:31] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:12] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:12] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:12] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -243,21 +204,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:31] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /array_test? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /fetch? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /fetch? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /fetch? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /fetch? 200 OK
-[2019-Dec-02 21:31] 127.0.0.1 GET http /form_process?q= 200 OK
-[2019-Dec-02 21:32] 127.0.0.1 GET http /result?data=%5B%7B%22IP%22%3A%221.1.1.1%22%2C%22CONFIG1%22%3A%22blah%22%2C%22CONFIG2%22%3A%22bleh%22%7D%2C%7B%22IP%22%3A%222.2.2.2%22%2C%22CONFIG1%22%3A%22blah2%22%2C%22CONFIG2%22%3A%22bleh2%22%7D%2C%7B%22IP%22%3A%223.3.3.3%22%2C%22CONFIG1%22%3A%22blah3%22%2C%22CONFIG2%22%3A%22bleh3%22%7D%5D 200 OK
-[2019-Dec-02 21:32] 127.0.0.1 GET http /TechType_fix_config?data=%7B%22ipaddress%22%3A%22%5B%5C%221.1.1.1%5C%22%5D%22%2C%22package%22%3A%22%5B%5D%22%7D 200 OK
-[2019-Dec-02 21:32] 127.0.0.1 GET http /test? 200 OK
-[2019-Dec-02 21:32] 127.0.0.1 GET http /test_js? 200 OK
-[2019-Dec-02 21:32] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:13] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:13] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:13] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -271,10 +220,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:33] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:35] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:35] 127.0.0.1 GET http /hello? 200 OK
-[2019-Dec-02 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:13] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:13] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:13] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -288,10 +236,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:35] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:35] 127.0.0.1 GET http /test? 200 OK
-[2019-Dec-02 21:35] 127.0.0.1 GET http /test_js? 200 OK
-[2019-Dec-02 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:18] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:18] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:18] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -305,7 +252,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:30] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:30] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:30] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -319,7 +268,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:34] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:34] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:34] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -333,7 +284,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:37] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:37] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:37] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -347,7 +300,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:37] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:37] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:37] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -361,7 +316,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:38] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:38] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:38] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -375,7 +332,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:35] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:39] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:39] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:39] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -389,9 +348,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:37] 127.0.0.1 GET http /test? 200 OK
-[2019-Dec-02 21:37] 127.0.0.1 GET http /test_js? 200 OK
-[2019-Dec-02 21:37] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:39] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:39] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:39] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -405,8 +364,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:37] 127.0.0.1 GET http /hello? 200 OK
-[2019-Dec-02 21:37] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:41] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:41] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:41] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -420,7 +380,9 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:37] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-07 22:42] 127.0.0.1 GET http /tree_view? 200 OK
+[2019-Dec-07 22:42] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-07 22:42] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -434,25 +396,3 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-02 21:37] 127.0.0.1 GET http /test? 200 OK
-[2019-Dec-02 21:37] 127.0.0.1 GET http /test_js? 200 OK
-[2019-Dec-02 21:37] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-02 21:37] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:38] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:38] 127.0.0.1 GET http /array_test? 200 OK
-[2019-Dec-02 21:38] 127.0.0.1 POST http /array_test? 200 OK
-[2019-Dec-02 21:38] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-02 21:38] 127.0.0.1 GET http /? 200 OK

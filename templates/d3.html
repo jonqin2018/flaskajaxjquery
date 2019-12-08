@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./static/css/d3_css.css"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  </head>
+<body>
+        <div class="w3-card-2" style="width:70%;margin-left:100px;margin-top: 100px;"></div>
+  <br>
+        <div class="w3-card-2" id="div2" style="width:70%;margin-left:100px;margin-top: 100px;"></div>
+    <script>
+        var data = [10, 15, 30, 50, 80, 65, 55, 30, 20, 10, 8]; // <- A
+      function render(data) { // <- B
+      // Enter
+      d3.select(".w3-card-2").selectAll("div.h-bar") // <- C
+      .data(data) // <- D
+      .enter() // <- E
+      .append("div") // <- F
+      .attr("class", "h-bar")
+      .append("span"); // <- G
+      // Update
+      d3.select(".w3-card-2").selectAll("div.h-bar")
+      .data(data)
+      .style("width", function (d) { // <- H
+      return (d * 3) + "px";
+      })
+      .select("span") // <- I
+      .text(function (d) {
+      return d;
+      });
+      // Exit
+      d3.select(".w3-card-2").selectAll("div.h-bar")
+      .data(data)
+      .exit() // <- J
+      .remove();
+      } 
+      setInterval(function () { // <- K
+      data.shift();
+      data.push(Math.round(Math.random() * 100));
+      render(data);
+      }, 1500);
+      render(data);
+        </script>
+
+
+
+<script type="text/javascript">
+    var data1 = [ // <- A
+        {width: 10, color: 23},{width: 15, color: 33},
+        {width: 30, color: 40},{width: 50, color: 60},
+        {width: 80, color: 22},{width: 65, color: 10},
+        {width: 55, color: 5},{width: 30, color: 30},
+        {width: 20, color: 60},{width: 10, color: 90},
+        {width: 8, color: 10}
+    ];
+    
+    var colorScale = d3.scaleLinear()
+        .domain([0, 100])
+        .range(["#add8e6", "blue"]); // <- B
+    function render1(data1) {
+        d3.select("#div2").selectAll("div.h-bar")
+            .data(data1)
+            .enter().append("div")
+                .attr("class", "h-bar")                
+            .append("span");
+        d3.select("#div2").selectAll("div.h-bar")
+            .data(data1)
+            .exit().remove();
+        d3.select("#div2").selectAll("div.h-bar")
+            .data(data1)
+                .attr("class", "h-bar")
+                .style("width", function (d) { // <- C
+                    return (d.width * 5) + "px"; // <- D
+                })
+                .style("background-color", function(d){
+                    return colorScale(d.color); // <- E
+                })
+            .select("span")
+                .text(function (d) {
+                    return d.width; // <- F
+                });
+    }
+    function randomValue() {
+        return Math.round(Math.random() * 100);
+    }
+    setInterval(function () {
+        data1.shift();
+        data1.push({width: randomValue(), color: randomValue()});
+        render1(data1);
+    }, 2000);
+    render1(data1);
+</script>
+</body>
+</html>

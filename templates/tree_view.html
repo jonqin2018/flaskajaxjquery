@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="static/js/jquery-1.9.0.js"></script>
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Slot Card</h2>
+<script>
+var display_data = {{data1|safe }};
+console.log(display_data);
+
+
+
+
+
+</script> 
+
+<div class ="w3-panel w3-card-4 w3-margin" id="createtable"></div>
+
+
+<script>
+
+$("#createtable").empty();
+
+slot = display_data[0]['card_id'].split('/')[0];
+
+$("#createtable").append('<button type="button" class="collapsible">' + slot + '</button>');
+
+for(let i = 0; i < display_data.length; i++){
+
+    
+
+if (display_data[i]['card_id'].split('/')[0] == slot) {
+
+    console.log("in equal" , slot)
+
+$("#createtable").append('<div class="content"><p>' + display_data[i]['card_id'] + 'card type ' + display_data[i]['card_type']   +'</p></div>');
+
+} else {
+
+    slot = display_data[i]['card_id'].split('/')[0];
+    console.log( "in else", slot)
+    $("#createtable").append('<button type="button" class="collapsible">' + slot + '</button>');
+    $("#createtable").append('<div class="content"><p>' + display_data[i]['card_id'] + '   card type ' + display_data[i]['card_type']   +'</p></div>');
+  }
+
+
+}
+
+</script>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+   var content = $(this).nextUntil("button");
+   
+   for (i = 0; i < content.length; i++) {
+   if (content[i].style.display === "block") {
+      content[i].style.display = "none";
+    } else {
+      content[i].style.display = "block";
+    }
+   }
+  });
+  
+}
+</script>
+
+
+</body>
+</html>
