@@ -42,53 +42,45 @@
 var display_data = {{data1|safe }};
 console.log(display_data);
 
-
-
-
-
 </script> 
 
-<div class ="w3-panel w3-card-4 w3-margin" id="createtable"></div>
+<div class ="w3-panel w3-card-4 w3-margin" style="width:70%" id="createtable"></div>
 
 
 <script>
-
 $("#createtable").empty();
 
 slot = display_data[0]['card_id'].split('/')[0];
 
-$("#createtable").append('<button type="button" class="collapsible"> SLOT ' + slot + '</button>');
+$("#createtable").append('<button type="button" class="collapsible"> SLOT ' + slot + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + '[+]' + '</button>');
 
 for(let i = 0; i < display_data.length; i++){
 
-    
-
-if (display_data[i]['card_id'].split('/')[0] == slot) {
-
-    console.log("in equal" , slot)
-
-var html = '<div class="content">' + 
+    var html = '<div class="content w3-margin">' + 
            '<input type="checkbox" name="card_id" value=' + display_data[i]["card_id"] +  '>' +
            '<span>  &nbsp;  </span>' +
             display_data[i]['card_id'] + '<span>  &nbsp;  </span>' +
             'card type ' + display_data[i]['card_type'] + '&nbsp;' +
-            
             '</div>'
-    $("#createtable").append(html);
+    
 
+if (display_data[i]['card_id'].split('/')[0] == slot) {
+
+    // console.log("in equal" , slot)
+
+    $("#createtable").append(html);
+    
 } else {
 
     slot = display_data[i]['card_id'].split('/')[0];
-    console.log( "in else", slot)
-    $("#createtable").append('<button type="button" class="collapsible"> SLOT ' + slot + '</button>');
+    // console.log( "in else", slot)
+    $("#createtable").append('<button type="button" class="collapsible"> SLOT ' + slot + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + '[+]' + '</button>');
     $("#createtable").append(html);
   }
-
 
 }
 
 </script>
-
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -96,7 +88,17 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("active");  
+    //TODO add '+' or '-' sign
+    if ($(this).html().includes('+')) {
+    $(this).html($(this).html().replace(/\+/g, "-"));
+     
+    } else {
+     if ($(this).html().includes('-')) {
+    $(this).html($(this).html().replace(/\-/g, "+"));
+      }
+    }
+    
    var content = $(this).nextUntil("button");
    
    for (i = 0; i < content.length; i++) {
@@ -120,10 +122,9 @@ for (i = 0; i < coll.length; i++) {
                     });
                     alert("Checked box is : " + favorite.join(", "));
                 });
+               
         
-        
-        
-        </script>
+</script>
 
 </body>
 </html>
