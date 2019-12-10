@@ -4,6 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="static/js/jquery-1.9.0.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./static/css/d3_css.css"/>
 <style>
 .collapsible {
   background-color: green;
@@ -29,25 +31,101 @@
 }
 </style>
 
+
+<script>
+
+
+var data = new Array()
+async function fetch_random_number() {
+
+let response = await fetch('/fetch_random_data');
+
+if (response.ok) { // if HTTP-status is 200-299
+ // get the response body (the method explained below)
+ var json = await response.text();
+ console.log(typeof (json))  // string
+ console.log("json out is here...");
+ console.log(json);
+  
+} else {
+ alert("HTTP-Error: " + response.status);
+}
+
+var data1 = JSON.parse(json); // <- A
+data.shift();
+data.push(data1["number"]);
+
+}
+
+function render(data) { // <- B
+// Enter
+
+d3.select(".w3-card-2").selectAll("div.h-bar") // <- C
+.data(data) // <- D
+.enter() // <- E
+.append("div") // <- F
+.attr("class", "h-bar")
+.append("span"); // <- G
+// Update
+
+d3.select(".w3-card-2").selectAll("div.h-bar")
+.data(data)
+.style("width", function (d) { // <- H
+return (d * 3) + "px";
+})
+.select("span") // <- I
+.text(function (d) {
+return d;
+});
+// Exit
+
+d3.select(".w3-card-2").selectAll("div.h-bar")
+.data(data)
+.exit() // <- J
+.remove();
+
+
+} 
+
+setInterval(function () { // <- K
+fetch_random_number();
+d3.selectAll(".w3-card-2 > *").remove();
+render(data);
+}, 10000);
+
+// setInterval();
+// render(data);
+
+
+
+  </script>
+
+
+
 </head>
 
 
 <body>
 
+<div class="w3-card-2" style="width:70%;margin-left:100px;margin-top: 100px;"></div>
+
+
 
 <div class="w3-bar"> Selet slot/card then click on Submit <button id="config_submit" class="w3-btn w3-black w3-margin-left" onclick="config_profile()">Submit</button> </div>
 
 
-<script>
-var display_data = {{data1|safe }};
-console.log(display_data);
-
-</script> 
 
 <div class ="w3-panel w3-card-4 w3-margin" style="width:70%" id="createtable"></div>
 
 
 <script>
+
+
+
+
+var display_data = {{data1|safe }};
+console.log(display_data);
+
 $("#createtable").empty();
 
 slot = display_data[0]['card_id'].split('/')[0];
@@ -80,9 +158,7 @@ if (display_data[i]['card_id'].split('/')[0] == slot) {
 
 }
 
-</script>
 
-<script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

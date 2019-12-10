@@ -496,6 +496,17 @@ def tree_view():
   return render_template('tree_view.html', data1=json.dumps(data_sorted))
 
 
+from datetime import datetime, time
+import random
+import time
+begin = time.time()
+@app.route("/fetch_random_data")
+def fetch_random():
+  global begin
+  # random_number = random.randint(1, 100)
+  end = time.time()
+  time_elapsed = int ((end - begin) / 60)
+  return json.dumps({"number":time_elapsed})
 
 
 if __name__=="__main__":
