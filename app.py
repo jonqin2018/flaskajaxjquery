@@ -248,8 +248,111 @@ def exceptions(e):
 
 @app.route("/d3")
 def d3():
-  return render_template('d3.html')
+    print("")
+    return render_template('d3.html')
 
+@app.route("/d3_data")
+def d3_data():
+    json_data = {
+    "nodes": [
+      {
+        "id": 1,
+        "name": "A"
+      },
+      {
+        "id": 2,
+        "name": "B"
+      },
+      {
+        "id": 3,
+        "name": "C"
+      },
+      {
+        "id": 4,
+        "name": "D"
+      },
+      {
+        "id": 5,
+        "name": "E"
+      },
+      {
+        "id": 6,
+        "name": "F"
+      },
+      {
+        "id": 7,
+        "name": "G"
+      },
+      {
+        "id": 8,
+        "name": "H"
+      },
+      {
+        "id": 9,
+        "name": "I"
+      },
+      {
+        "id": 10,
+        "name": "J"
+      }
+    ],
+    "links": [
+  
+      {
+        "source": 1,
+        "target": 2
+      },
+      {
+        "source": 1,
+        "target": 5
+      },
+      {
+        "source": 1,
+        "target": 6
+      },
+  
+      {
+        "source": 2,
+        "target": 3
+      },
+              {
+        "source": 2,
+        "target": 7
+      }
+      ,
+  
+      {
+        "source": 3,
+        "target": 4
+      },
+       {
+        "source": 8,
+        "target": 3
+      }
+      ,
+      {
+        "source": 4,
+        "target": 5
+      }
+      ,
+  
+      {
+        "source": 4,
+        "target": 9
+      },
+      {
+        "source": 5,
+        "target": 10
+      }
+    ]
+  }  
+    return json.dumps(json_data)
+
+
+@app.route("/network")
+def d3_network():
+    print("in d3 network")
+    return render_template('network.html')
 
 @app.route("/tree_view")
 def tree_view():
@@ -503,6 +606,7 @@ begin = time.time()
 @app.route("/fetch_random_data")
 def fetch_random():
   global begin
+  
   # random_number = random.randint(1, 100)
   end = time.time()
   time_elapsed = int ((end - begin) / 60)
