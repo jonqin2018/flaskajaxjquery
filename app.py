@@ -4,6 +4,8 @@ from flask import Blueprint, render_template, redirect, url_for, request, flash,
 from collections import OrderedDict
 import re
 from flask_restful import Resource, Api
+import os
+import json
 
 # for logging testing
 from logging.handlers import RotatingFileHandler
@@ -253,106 +255,60 @@ def d3():
 
 @app.route("/d3_data")
 def d3_data():
-    json_data = {
-    "nodes": [
-      {
-        "id": 1,
-        "name": "A"
-      },
-      {
-        "id": 2,
-        "name": "B"
-      },
-      {
-        "id": 3,
-        "name": "C"
-      },
-      {
-        "id": 4,
-        "name": "D"
-      },
-      {
-        "id": 5,
-        "name": "E"
-      },
-      {
-        "id": 6,
-        "name": "F"
-      },
-      {
-        "id": 7,
-        "name": "G"
-      },
-      {
-        "id": 8,
-        "name": "H"
-      },
-      {
-        "id": 9,
-        "name": "I"
-      },
-      {
-        "id": 10,
-        "name": "J"
-      }
-    ],
-    "links": [
-  
-      {
-        "source": 1,
-        "target": 2
-      },
-      {
-        "source": 1,
-        "target": 5
-      },
-      {
-        "source": 1,
-        "target": 6
-      },
-  
-      {
-        "source": 2,
-        "target": 3
-      },
-              {
-        "source": 2,
-        "target": 7
-      }
-      ,
-  
-      {
-        "source": 3,
-        "target": 4
-      },
-       {
-        "source": 8,
-        "target": 3
-      }
-      ,
-      {
-        "source": 4,
-        "target": 5
-      }
-      ,
-  
-      {
-        "source": 4,
-        "target": 9
-      },
-      {
-        "source": 5,
-        "target": 10
-      }
-    ]
-  }  
-    return json.dumps(json_data)
+  path = os.getcwd()
+  print("current path -----> ", path)
+  with open (path + "/static/data/d3_data.json", "r") as f:
+    data_dict = json.load(f)
+    print("data_array -----> ", data_dict)
+    
+  return json.dumps(data_dict)
 
+@app.route("/d3_data1")
+def d3_data1():
+  path = os.getcwd()
+  print("current path -----> ", path)
+  with open (path + "/static/data/miserables.json", "r") as f:
+    data_dict = json.load(f)
+    print("data_array -----> ", data_dict)
 
+@app.route("/d3_data2")
+def d3_data2():
+  path = os.getcwd()
+  print("current path -----> ", path)
+  with open (path + "/static/data/d3_data2.json", "r") as f:
+    data_dict = json.load(f)
+    print("data_array -----> ", data_dict)
+    
+  return json.dumps(data_dict)
+
+# @app.route("/path")
+# def path():
+#   path = os.getcwd()
+#   print("current path -----> ", path)
+#   with open ("/static/data/d3_data.json", r) as f:
+#     data_array = f.readlines()
+#   return json.dumps(data_array) 
+  
 @app.route("/network")
 def d3_network():
     print("in d3 network")
     return render_template('network.html')
+
+@app.route("/network1")
+def d3_network1():
+    print("in d3 network1")
+    return render_template('network1.html')
+
+@app.route("/network2")
+def d3_network2():
+    print("in d3 network2")
+    return render_template('network2.html')
+
+@app.route("/network3")
+def d3_network3():
+    print("in d3 network3")
+    return render_template('network3.html')
+
 
 @app.route("/tree_view")
 def tree_view():
