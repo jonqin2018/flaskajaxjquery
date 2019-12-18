@@ -57,7 +57,7 @@ var link = svg.append("g")
   .attr("class", "link")
   .selectAll("line");
 
-link_data = [ {"source":"0", "target":"1"}, {"source":"1", "target":"2"}
+link_data = [ {"num":"1", "source":"0", "target":"1"}, {"num": "2", "source":"1", "target":"2"}
       ];
 
   link = link
@@ -150,8 +150,29 @@ function mousedowned(d) {
       d3.event.stopImmediatePropagation();
     } else if (!d.selected) {
       d3.select(this).classed("selected", function(p) { return p.selected = d === p; });
+      //get node name 
+      //get line(s), it's tied to node name
+      //get if it's source or target 
+      //mark line(s) and source and target
+      node_name = d.id;
+      lines_data = [];
+      for (var i = 0; i < link_data.length; i++ ) {
+        if (link_data[i].source == node_name ){
+          temp_dict = "{" + node_name + ":'source'}";
+          lines_data.push(temp_dict);
+        }
+        if (link_data[i].target == node_name ) {
+          temp_dict = "{" + node_name + ":'target'}";
+          lines_data.push(temp_dict);
+
+        } 
+
+        }
+      console.log(lines_data);
+      return(lines_data)
+      
     }
-  }
+}
 
 
 
