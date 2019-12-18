@@ -117,7 +117,23 @@ function dragged(d) {
   rect_data = d3.select(this).select("rect")
     .attr("x", d.x = d3.event.x)
     .attr("y", d.y = d3.event.y);
-    update_line_pos(d);
+      
+    
+    nudge(d3.event.dx, d3.event.dy, rect_data);
+
+  }
+   
+  
+
+  function nudge(dx, dy, d) {
+
+    link.filter(function(d) { return d.source.selected; })
+      .attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; });
+
+  link.filter(function(d) { return d.target.selected; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
 }
 
 function dragended(d) {
@@ -137,19 +153,7 @@ function mousedowned(d) {
     }
   }
 
-  function nudge(dx, dy) {
-  node.filter(function(d) { return d.selected; })
-      .attr("cx", function(d) { return d.x += dx; })
-      .attr("cy", function(d) { return d.y += dy; })
 
-  link.filter(function(d) { return d.source.selected; })
-      .attr("x1", function(d) { return d.source.x; })
-      .attr("y1", function(d) { return d.source.y; });
-
-  link.filter(function(d) { return d.target.selected; })
-      .attr("x2", function(d) { return d.target.x; })
-      .attr("y2", function(d) { return d.target.y; });
-}
 
 
 </script>
