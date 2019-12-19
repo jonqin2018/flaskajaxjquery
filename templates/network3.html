@@ -38,7 +38,7 @@ var rectangles = d3.range(3).map(function() {
   return {
     x: Math.round(Math.random() * (width)),
     y: Math.round(Math.random() * (height)),
-	id: i++
+	 id: i++
   };
 });
 
@@ -66,7 +66,8 @@ link_data = [ {"num":"1", "source":"0", "target":"1"}, {"num": "2", "source":"1"
       .attr("x1", function(d) { return rectangles[d.source].x; })
       .attr("y1", function(d) { return rectangles[d.source].y; })
       .attr("x2", function(d) { return rectangles[d.target].x; })
-      .attr("y2", function(d) { return rectangles[d.target].y; });
+      .attr("y2", function(d) { return rectangles[d.target].y; })
+      .attr("class", function(d) { return d.num });
 
 ///
 
@@ -117,9 +118,35 @@ function dragged(d) {
   rect_data = d3.select(this).select("rect")
     .attr("x", d.x = d3.event.x)
     .attr("y", d.y = d3.event.y);
+
       
+  //update line position
+  for (let i = 0; i < lines_data.length; i++) {
+      
+    const object = lines_data[i];
+    for (const [key, value] of Object.entries(object)) {
+      // console.log(key, value);
+ 
+    // key has value of which node, value has info about which side, if source x1,y1, if target x2, y2
+    if (value == 'source'){
+
+      link.attr("x1", d.x);
+      link.attr("y1", d.y);
     
-    nudge(d3.event.dx, d3.event.dy, rect_data);
+    }
+
+    if (value == 'target') {
+   
+      link.attr("x2", d.x);
+      link.attr("y2", d.y);
+
+    }
+  }
+
+  }
+  console.log("dragged", lines_data );
+ 
+    
 
   }
    
@@ -143,8 +170,9 @@ function dragended(d) {
 // function dragged(d) {
 //     nudge(d3.event.dx, d3.event.dy);
 //   }
-
+var lines_data = [];
 function mousedowned(d) {
+    lines_data = [];
     if (shiftKey) {
       d3.select(this).classed("selected", d.selected = !d.selected);
       d3.event.stopImmediatePropagation();
@@ -154,24 +182,29 @@ function mousedowned(d) {
       //get line(s), it's tied to node name
       //get if it's source or target 
       //mark line(s) and source and target
-      node_name = d.id;
-      lines_data = [];
+
+    }
+      node_name = d.id.toString();
+      console.log("node_name type", typeof(node_name))
+      temp_dict = new Object();
       for (var i = 0; i < link_data.length; i++ ) {
         if (link_data[i].source == node_name ){
-          temp_dict = "{" + node_name + ":'source'}";
+          temp_dict[node_name] = 'source';
           lines_data.push(temp_dict);
         }
+
+        
         if (link_data[i].target == node_name ) {
-          temp_dict = "{" + node_name + ":'target'}";
+          temp_dict[node_name] = 'target';
           lines_data.push(temp_dict);
 
         } 
-
+          temp_dict = {};
         }
-      console.log(lines_data);
-      return(lines_data)
+      // console.log("in mousedowned", lines_data);
+      return(lines_data);
       
-    }
+  
 }
 
 
