@@ -48,7 +48,7 @@ var brush = svg.append("g")
 
 var node = svg.append("g")
     .attr("class", "node")
-  .selectAll("circle");
+    .selectAll("circle");
 
 d3.json("d3_data2", function(error, graph) {
   if (error) throw error;

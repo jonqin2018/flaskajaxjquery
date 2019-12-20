@@ -10,12 +10,13 @@
 .rect {
   pointer-events: all;
   stroke: none;
-  stroke-width: 40px;
+  stroke-width: 80px;
 }
 
 
 .link {
   stroke: #999;
+  stroke-width: 2px;
 }
 
 svg {
@@ -38,7 +39,7 @@ var rectangles = d3.range(3).map(function() {
   return {
     x: Math.round(Math.random() * (width)),
     y: Math.round(Math.random() * (height)),
-	 id: i++
+	  id: i++
   };
 });
 
@@ -57,7 +58,7 @@ var link = svg.append("g")
   .attr("class", "link")
   .selectAll("line");
 
-link_data = [ {"num":"1", "source":"0", "target":"1"}, {"num": "2", "source":"1", "target":"2"}
+link_data = [ {"num":"a1", "source":"0", "target":"1"}, {"num": "a2", "source":"1", "target":"2"}
       ];
 
   link = link
@@ -71,26 +72,17 @@ link_data = [ {"num":"1", "source":"0", "target":"1"}, {"num": "2", "source":"1"
 
 ///
 
-function update_line_pos(){
-  d = d3.select
-  d3.select("lines")
-  .attr("x1", function(d) { return rectangles[d.source].x; })
-  .attr("y1", function(d) { return rectangles[d.source].y; })
-  .attr("x2", function(d) { return rectangles[d.target].x; })
-  .attr("y2", function(d) { return rectangles[d.target].y; });
-}
+
 var group = svg.selectAll('g')
   .data(rectangles)
   .enter().append("g")
   .attr("transform", 
-        "translate(" + margin.left + "," + margin.top + ")")
+         "translate(" + margin.left + "," + margin.top + ")")
   
-  
-  
-  .call(d3.drag()
-    .on("start", dragstarted)
-    .on("drag", dragged)
-    .on("end", dragended));
+    .call(d3.drag()
+    
+    .on("drag", dragged));
+   
 
 group.append("rect")
      .attr("x", function(d) { return d.x; })
@@ -107,9 +99,6 @@ group.append("text")
        .style("fill", "steelblue")
        .text(function(d) { return d.id});  
     
-function dragstarted(d) {
-  d3.select(this).raise().classed("active", true);
-}
 
 function dragged(d) {
   d3.select(this).select("text")
@@ -118,54 +107,43 @@ function dragged(d) {
   rect_data = d3.select(this).select("rect")
     .attr("x", d.x = d3.event.x)
     .attr("y", d.y = d3.event.y);
-
       
   //update line position
   for (let i = 0; i < lines_data.length; i++) {
       
     const object = lines_data[i];
     for (const [key, value] of Object.entries(object)) {
-      // console.log(key, value);
+      // //console.log(key, value);
  
     // key has value of which node, value has info about which side, if source x1,y1, if target x2, y2
     if (value == 'source'){
-
-      link.attr("x1", d.x);
-      link.attr("y1", d.y);
+      class_select = lines_data[i]["line"].toString();
+      //console.log("class_select", typeof(class_select));
+      d3.selectAll("." + class_select)
+      .attr("x1", d.x)
+      .attr("y1", d.y);
     
     }
 
     if (value == 'target') {
-   
-      link.attr("x2", d.x);
-      link.attr("y2", d.y);
+      class_select = lines_data[i]["line"].toString();
+       d3.selectAll("." + class_select)
+      .attr("x2", d.x)
+      .attr("y2", d.y);
+      }
+      
 
     }
   }
 
-  }
-  console.log("dragged", lines_data );
+  
+  //console.log("dragged", lines_data );
  
     
 
   }
    
   
-
-  function nudge(dx, dy, d) {
-
-    link.filter(function(d) { return d.source.selected; })
-      .attr("x1", function(d) { return d.source.x; })
-      .attr("y1", function(d) { return d.source.y; });
-
-  link.filter(function(d) { return d.target.selected; })
-      .attr("x2", function(d) { return d.target.x; })
-      .attr("y2", function(d) { return d.target.y; });
-}
-
-function dragended(d) {
-  d3.select(this).classed("active", false);
-}
 
 // function dragged(d) {
 //     nudge(d3.event.dx, d3.event.dy);
@@ -185,23 +163,28 @@ function mousedowned(d) {
 
     }
       node_name = d.id.toString();
-      console.log("node_name type", typeof(node_name))
+      //console.log("node_name type", typeof(node_name))
       temp_dict = new Object();
       for (var i = 0; i < link_data.length; i++ ) {
         if (link_data[i].source == node_name ){
           temp_dict[node_name] = 'source';
+          temp_dict["line"] = link_data[i]["num"]
           lines_data.push(temp_dict);
+          
         }
 
         
         if (link_data[i].target == node_name ) {
           temp_dict[node_name] = 'target';
+          temp_dict["line"] = link_data[i]["num"]
           lines_data.push(temp_dict);
 
         } 
+
+        
           temp_dict = {};
         }
-      // console.log("in mousedowned", lines_data);
+      // //console.log("in mousedowned", lines_data);
       return(lines_data);
       
   
