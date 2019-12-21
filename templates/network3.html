@@ -35,7 +35,7 @@ var margin = {top: 10, right: 10, bottom: 30, left: 10},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 i = 0;
-var rectangles = d3.range(3).map(function() {
+var rectangles = d3.range(4).map(function() {
   return {
     x: Math.round(Math.random() * (width)),
     y: Math.round(Math.random() * (height)),
@@ -58,7 +58,7 @@ var link = svg.append("g")
   .attr("class", "link")
   .selectAll("line");
 
-link_data = [ {"num":"a1", "source":"0", "target":"1"}, {"num": "a2", "source":"1", "target":"2"}
+link_data = [ {"num":"a1", "source":"1", "target":"2"}, {"num": "a2", "source":"2", "target":"3"}
       ];
 
   link = link
