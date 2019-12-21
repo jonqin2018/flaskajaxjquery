@@ -64,7 +64,8 @@ var link = svg.append("g")
   .attr("class", "link")
   .selectAll("line");
 
-link_data = [ {"num":"a1", "source":"1", "target":"2"}, {"num": "a2", "source":"2", "target":"3"}];
+link_data = [ {"num": "a1", "source":"1", "target":"2"}, 
+              {"num": "a2", "source":"2", "target":"3"}  ];
 
   link = link
     .data(link_data)
