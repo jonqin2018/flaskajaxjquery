@@ -30,16 +30,24 @@ svg {
 
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script>
- var shiftKey;
+var shiftKey;
 var margin = {top: 10, right: 10, bottom: 30, left: 10},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
-i = 0;
+
+var node_name = ["Node0", "Node1", "Node2", "Node3"];
+var i = 0;
+
+//node 0 (first one) data will be used to the svg on the body
+//due to below
+// var group = svg.selectAll('g')  : here the first node data is used for first svg
+//    .data(rectangles)
 var rectangles = d3.range(4).map(function() {
   return {
     x: Math.round(Math.random() * (width)),
     y: Math.round(Math.random() * (height)),
-	  id: i++
+    node_name: node_name[i],
+    id: i++,
   };
 });
 
@@ -51,15 +59,12 @@ var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom);
 
-
-
 ///
 var link = svg.append("g")
   .attr("class", "link")
   .selectAll("line");
 
-link_data = [ {"num":"a1", "source":"1", "target":"2"}, {"num": "a2", "source":"2", "target":"3"}
-      ];
+link_data = [ {"num":"a1", "source":"1", "target":"2"}, {"num": "a2", "source":"2", "target":"3"}];
 
   link = link
     .data(link_data)
@@ -70,17 +75,12 @@ link_data = [ {"num":"a1", "source":"1", "target":"2"}, {"num": "a2", "source":"
       .attr("y2", function(d) { return rectangles[d.target].y; })
       .attr("class", function(d) { return d.num });
 
-///
-
-
 var group = svg.selectAll('g')
   .data(rectangles)
   .enter().append("g")
   .attr("transform", 
-         "translate(" + margin.left + "," + margin.top + ")")
-  
+        "translate(" + margin.left + "," + margin.top + ")")
     .call(d3.drag()
-    
     .on("drag", dragged));
    
 
@@ -97,7 +97,8 @@ group.append("text")
      .attr("y", function(d) { return d.y; })
        .attr("text-anchor", "start")
        .style("fill", "steelblue")
-       .text(function(d) { return d.id});  
+       .style("font-size", "20px")
+       .text(function(d) { return d.node_name});  
     
 
 function dragged(d) {
@@ -132,23 +133,15 @@ function dragged(d) {
       .attr("y2", d.y);
       }
       
-
     }
   }
-
-  
-  //console.log("dragged", lines_data );
  
-    
 
   }
    
   
+var lines_data = [];  //holds line need to be updated with position line and if source or terget
 
-// function dragged(d) {
-//     nudge(d3.event.dx, d3.event.dy);
-//   }
-var lines_data = [];
 function mousedowned(d) {
     lines_data = [];
     if (shiftKey) {
@@ -189,11 +182,5 @@ function mousedowned(d) {
       
   
 }
-
-
-
-
 </script>
-
-
 </body>
