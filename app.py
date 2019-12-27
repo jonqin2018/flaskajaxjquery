@@ -568,6 +568,10 @@ def fetch_random():
   time_elapsed = int ((end - begin) / 60)
   return json.dumps({"number":time_elapsed})
 
+@app.route("/multi")
+def multi():
+    print("")
+    return render_template('multi_layer.html')
 
 if __name__=="__main__":
     
