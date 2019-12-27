@@ -7,6 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+
+<!-- multi laper menu-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+  </style>
+
+
+
     <link rel="icon" href="static/favicon.ico">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Bootstrap core CSS -->
@@ -53,6 +72,9 @@
   <a href="/hello" class="w3-bar-item w3-button">Hello api</a>
   <a href="/doc" class="w3-bar-item w3-button">Documentation</a>
   <a href="/easyui" class="w3-bar-item w3-button">EasyUi</a>
+
+
+  
   <div class="w3-dropdown-hover" style="position: fixed;">
     <button class="w3-button" style="padding-right: 2px;">More <i style="margin-top: 3px;" class="fa fa-caret-down"></i></button>
     <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -65,6 +87,9 @@
       <a href="/multi" class="w3-bar-item w3-button w3-black">Multi Layer </a>
     </div>
   </div>
+
+
+
 </div> <!--end of cell1-->
 
 
@@ -74,6 +99,45 @@
     <div class="search"></div>
   </div>
 </div>  <!--end of cell2-->
+
+
+<div class="w3-container w3-cell">
+  <div class="dropdown" style="z-index: 10000; position: fixed; margin-left: 50%;">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">HTML</a></li>
+      <li><a tabindex="-1" href="#">CSS</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+</div>  <!--end of cell3-->
+
+
   <!-- <div class="w3-right"><input type="text" class="w3-bar-item w3-input" style="padding-bottom: 11px; " placeholder="Search..">
   <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-search"></i></a>
   </div> -->
