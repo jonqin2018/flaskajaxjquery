@@ -14,7 +14,7 @@ from time import strftime
 import logging
 import traceback
 # end for logging testing
-
+from simplesqlite import SimpleSQLite
 app = Flask(__name__)
 api = Api(app)
 
@@ -572,6 +572,53 @@ def fetch_random():
 def multi():
     print("")
     return render_template('multi_layer.html')
+
+
+
+@app.route("/simpledb")
+def simpledb():
+    return_array = []
+    temp_dict = {}
+    print("In the simpledb function")
+    
+    table_name = "sample_table"
+    con = SimpleSQLite("simple.sqlite", "w")
+
+    print("after con")
+    
+    # create table -----
+    data_matrix = [[1, 1.1, "aaa", 1, 1], [2, 2.2, "bbb", 2.2, 2.2], [3, 3.3, "ccc", 3, "ccc"]]
+    con.create_table_from_data_matrix(
+        table_name,
+        ["attr_a", "attr_b", "attr_c", "attr_d", "attr_e"],
+        data_matrix,
+    )
+    con.insert(
+    table_name,
+    record={
+        "attr_a": 4,
+        "attr_b": 4.4,
+        "attr_c": "ddd",
+        "attr_d": 4.44,
+        "attr_e": "hoge",
+    })
+    # display data type for each column in the table -----
+    print(con.schema_extractor.fetch_table_schema(table_name).dumps())
+    
+    
+    # display values in the table -----
+    print("records:")
+    key_array = ["attr_a","attr_b","attr_c","attr_d","attr_e",]
+    result = con.select(select="*", table_name=table_name)
+    print(type(result))
+    for record in result.fetchall():
+        print(record)
+        temp_dict = dict(zip(key_array,record))
+        return_array.append(temp_dict)
+        temp_dict = []
+
+    print("Last line of the simpledb function:")
+    return json.dumps(return_array)
 
 if __name__=="__main__":
     

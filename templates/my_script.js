@@ -188,13 +188,17 @@ $("#btn13").click(function () {
 
  })  //end of btn13 function
 
+/////////////////// btn13
+$("#btn14").click(function () {
 
+  fetch_db_data();
+ 
+  })  //end of btn13 function
+ 
 
 }); // end of document ready
  
-
-
-
+  
 
 async function fetchtest() {
 
@@ -213,3 +217,66 @@ if (response.ok) { // if HTTP-status is 200-299
 
 }
 
+async function fetch_db_data() {
+
+  let response = await fetch('/simpledb');
+  
+  if (response.ok) { // if HTTP-status is 200-299
+   // get the response body (the method explained below)
+   let res_string= await response.text();
+   res_array  = JSON.parse(res_string)
+   console.log(typeof res_array); // string
+   console.log("json out is here...");
+   console.log(res_array);
+  //  $("#fetch_db_result").html(JSON.parse(res_array))  
+   $("#fetch_db_result").append("<br> Return data is:  <br>" + JSON.stringify(res_array));
+     // res_array.push(res_dict);
+     // console.log(res_dict);
+   //  
+     var col = [];
+     for (var i = 0; i < res_array.length; i++) {
+       for (var key in res_array[i]) {
+           if (col.indexOf(key) === -1) {
+               col.push(key);
+           }
+       }
+   }
+    
+   // 
+   // CREATE DYNAMIC TABLE.
+   var table = document.createElement("table");
+       table.setAttribute("class", "w3-table-all");
+       
+       
+
+   // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+   var tr = table.insertRow(-1);                   // TABLE ROW.
+
+   for (var i = 0; i < col.length; i++) {
+       var th = document.createElement("th");      // TABLE HEADER.
+       th.setAttribute("class", "w3-green")
+       th.innerHTML = col[i];
+       tr.appendChild(th);
+   }
+
+   // ADD JSON DATA TO THE TABLE AS ROWS.
+   for (var i = 0; i < res_array.length; i++) {
+
+       tr = table.insertRow(-1);
+
+       for (var j = 0; j < col.length; j++) {
+           var tabCell = tr.insertCell(-1);
+           tabCell.innerHTML = res_array[i][col[j]];
+       }
+   }
+
+   // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+   var divContainer = document.getElementById("db_table");
+   divContainer.innerHTML = "";
+   divContainer.appendChild(table);
+  } else {
+   alert("HTTP-Error: " + response.status);
+  }
+  
+  }

@@ -1,4 +1,4 @@
-[2019-Dec-20 20:42] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:13] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -12,283 +12,45 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-20 20:42] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 20:42] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 20:45] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 20:45] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 20:45] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-20 20:45] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 20:45] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 20:45] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 20:45] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 20:49] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 20:49] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 21:28] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-20 21:34] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-20 21:34] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 21:34] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-20 22:04] 127.0.0.1 GET http /doc? 200 OK
-[2019-Dec-20 22:04] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-20 22:04] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-20 22:04] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-20 22:04] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-20 22:04] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-26 20:54] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/css/auto-complete.css? 304 NOT MODIFIED
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/css/signin.css? 304 NOT MODIFIED
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/js/fetch.js? 304 NOT MODIFIED
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/css/scss_css.css? 304 NOT MODIFIED
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/css/my_style.css? 304 NOT MODIFIED
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-26 20:54] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-26 20:54] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2019-Dec-26 20:54] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /easyui? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/css/easyui.css? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/css/icon.css? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/css/demo.css? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/js/jquery.easyui.min.js? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/js/jquery.min.js? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/css/images/combo_arrow.png? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:14] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
+  File "app.py", line 595, in simpledb
+    print(con.schema_extractor.fetch_table_schema(table_name).dumps())
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/sqliteschema/_schema.py", line 100, in dumps
+    import pytablewriter as ptw
+ModuleNotFoundError: No module named 'pytablewriter'
+
+[2019-Dec-29 18:14] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 20:54] 127.0.0.1 GET http /static/css/images/blank.gif? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:15] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+  File "app.py", line 597, in simpledb
+    print(con.schema_extractor.fetch_table_schema(table_name).dumps())
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/sqliteschema/_schema.py", line 100, in dumps
+    import pytablewriter as ptw
+ModuleNotFoundError: No module named 'pytablewriter'
 
-[2019-Dec-26 20:54] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:15] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -302,9 +64,19 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 20:54] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /network3? 200 OK
-[2019-Dec-26 20:54] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:15] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 597, in simpledb
+    print(con.schema_extractor.fetch_table_schema(table_name).dumps())
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/sqliteschema/_schema.py", line 100, in dumps
+    import pytablewriter as ptw
+ModuleNotFoundError: No module named 'pytablewriter'
+
+[2019-Dec-29 18:15] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -318,10 +90,19 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 21:18] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:19] 127.0.0.1 GET http /d3? 200 OK
-[2019-Dec-26 21:19] 127.0.0.1 GET http /static/css/d3_css.css? 200 OK
-[2019-Dec-26 21:19] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:16] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 597, in simpledb
+    print(con.schema_extractor.fetch_table_schema(table_name).dumps())
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/sqliteschema/_schema.py", line 100, in dumps
+    import pytablewriter as ptw
+ModuleNotFoundError: No module named 'pytablewriter'
+
+[2019-Dec-29 18:16] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -335,12 +116,19 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 21:19] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:19] 127.0.0.1 GET http /doc? 200 OK
-[2019-Dec-26 21:19] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2019-Dec-26 21:19] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:30] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-26 21:30] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:21] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 597, in simpledb
+    print(con.schema_extractor.fetch_table_schema(table_name).dumps())
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/sqliteschema/_schema.py", line 100, in dumps
+    import pytablewriter as ptw
+ModuleNotFoundError: No module named 'pytablewriter'
+
+[2019-Dec-29 18:21] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -354,7 +142,19 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 21:30] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:23] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 597, in simpledb
+    print(con.schema_extractor.fetch_table_schema(table_name).dumps())
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/sqliteschema/_schema.py", line 100, in dumps
+    import pytablewriter as ptw
+ModuleNotFoundError: No module named 'pytablewriter'
+
+[2019-Dec-29 18:23] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -368,7 +168,8 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 21:30] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:31] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 18:31] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -382,7 +183,23 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 21:31] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:38] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 593, in simpledb
+    data_matrix,
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/simplesqlite/core.py", line 1293, in create_table_from_data_matrix
+    index_attrs,
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/simplesqlite/core.py", line 1640, in __create_table_from_tabledata
+    self.validate_access_permission(["w", "a"])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/simplesqlite/core.py", line 1161, in validate_access_permission
+    "' or '".join(valid_permissions), self.mode
+OSError: invalid access: expected-mode='w' or 'a', current-mode='r'
+
+[2019-Dec-29 18:38] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -396,9 +213,23 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 21:33] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:33] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-26 21:33] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:39] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 593, in simpledb
+    data_matrix,
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/simplesqlite/core.py", line 1293, in create_table_from_data_matrix
+    index_attrs,
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/simplesqlite/core.py", line 1640, in __create_table_from_tabledata
+    self.validate_access_permission(["w", "a"])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/simplesqlite/core.py", line 1161, in validate_access_permission
+    "' or '".join(valid_permissions), self.mode
+OSError: invalid access: expected-mode='w' or 'a', current-mode='r'
+
+[2019-Dec-29 18:39] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -412,11 +243,8 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 21:33] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:34] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:34] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 21:34] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-26 21:34] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:40] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 18:40] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -430,30 +258,25 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 21:34] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:35] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:35] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 21:35] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:35] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 21:38] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:38] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 21:46] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:46] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 21:48] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:48] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 21:49] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:49] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 21:53] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:53] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 21:55] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:55] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 21:55] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 21:58] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 21:58] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:40] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 606, in simpledb
+    return json.dumps(result)
+  File "/usr/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Cursor' is not JSON serializable
+
+[2019-Dec-29 18:40] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -467,9 +290,25 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 22:03] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /d3? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:41] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 607, in simpledb
+    return json.dumps(result)
+  File "/usr/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Cursor' is not JSON serializable
+
+[2019-Dec-29 18:41] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -483,10 +322,17 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 22:03] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /network? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /d3_data? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:42] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 606, in simpledb
+    return_array.append(record)
+NameError: name 'return_array' is not defined
+
+[2019-Dec-29 18:42] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -500,10 +346,8 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 22:03] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /doc? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /hello? 200 OK
-[2019-Dec-26 22:03] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:42] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 18:42] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -517,29 +361,23 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 22:04] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:04] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:04] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:04] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:04] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:04] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:04] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:04] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-26 22:05] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:43] 127.0.0.1 GET http /simpledb? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 593, in simpledb
+    data_matrix,
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/simplesqlite/core.py", line 1293, in create_table_from_data_matrix
+    index_attrs,
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/simplesqlite/core.py", line 1640, in __create_table_from_tabledata
+    self.validate_access_permission(["w", "a"])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/simplesqlite/core.py", line 1161, in validate_access_permission
+    "' or '".join(valid_permissions), self.mode
+OSError: invalid access: expected-mode='w' or 'a', current-mode='r'
+
+[2019-Dec-29 18:43] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -553,43 +391,8 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 22:05] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:07] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:07] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:08] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:10] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:16] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:16] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:16] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:17] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:17] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:17] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:19] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:19] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:19] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:21] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:21] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:22] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:22] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:22] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:22] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:23] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:24] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:26] 127.0.0.1 GET http /tree_view? 200 OK
-[2019-Dec-26 22:26] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:48] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 18:48] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -603,14 +406,8 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 22:26] 127.0.0.1 GET http /fetch_random_data? 200 OK
-[2019-Dec-26 22:26] 127.0.0.1 GET http /fetch_random_data? 200 OK
-[2019-Dec-26 22:26] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:26] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:27] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:27] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:27] 127.0.0.1 GET http /multi? 200 OK
-[2019-Dec-26 22:27] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+[2019-Dec-29 18:50] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 18:50] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
@@ -624,21 +421,438 @@ Traceback (most recent call last):
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
 
-[2019-Dec-26 22:27] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:27] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:27] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:27] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2019-Dec-26 22:27] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2019-Dec-26 22:28] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 20:49] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-29 20:50] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 20:50] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 20:52] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 20:52] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 20:52] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 20:52] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /fetch? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /fetch? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /fetch? 200 OK
+[2019-Dec-29 20:53] 127.0.0.1 GET http /fetch? 200 OK
+[2019-Dec-29 20:55] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 20:55] 127.0.0.1 GET http /favicon.ico? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+[2019-Dec-29 20:57] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 20:57] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:01] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:02] 127.0.0.1 GET http /fetch? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:03] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:06] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:07] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:11] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:12] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:14] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:15] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:16] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:17] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:19] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:20] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /form_process?q= 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:21] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:22] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /fetch? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:23] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:25] 127.0.0.1 GET http /fetch? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:35] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:37] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:38] 127.0.0.1 GET http /simpledb? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2019-Dec-29 21:39] 127.0.0.1 GET http /simpledb? 200 OK

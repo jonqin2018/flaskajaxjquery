@@ -101,54 +101,49 @@
 </div>  <!--end of cell2-->
 
 
-<div class="w3-container w3-cell">
-  <div class="dropdown" style="z-index: 10000; position: fixed;">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a tabindex="-1" href="#">HTML</a></li>
-      <li><a tabindex="-1" href="#">CSS</a></li>
-      <li class="dropdown-submenu">
-        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
-          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
-          <li class="dropdown-submenu">
-            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">3rd level dropdown</a></li>
-              <li><a href="#">3rd level dropdown</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<script>
-$(document).ready(function(){
-  $('.dropdown-submenu a.test').on("click", function(e){
-    $(this).next('ul').toggle();
-    e.stopPropagation();
-    e.preventDefault();
-  });
-});
-</script>
-</div>  <!--end of cell3-->
 
 
-  <!-- <div class="w3-right"><input type="text" class="w3-bar-item w3-input" style="padding-bottom: 11px; " placeholder="Search..">
-  <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-search"></i></a>
-  </div> -->
-</div>
+</div> <!--end of nav bar-->
 
 <div class="sidenav w3-card-4" style="font-family: Segoe UI,Arial,sans-serif;">
   <a href="#" onclick="on()" >Turn on overlay</a>
   <a href="/test">test</a>
   <a href="#clients">Clients</a>
   <a href="#contact">Contact</a>
-
+  <div class="w3-container w3-cell">
+    <div class="dropdown" style="z-index: 10000; position: fixed;">
+      <button class="btn btn-default dropdown-toggle w3-black" type="button" data-toggle="dropdown">More Stuff
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a tabindex="-1" href="/simpledb">SimpleDB</a></li>
+        <li><a tabindex="-1" href="#">CSS</a></li>
+        <li class="dropdown-submenu">
+          <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+            <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+            <li class="dropdown-submenu">
+              <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">3rd level dropdown</a></li>
+                <li><a href="#">3rd level dropdown</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>  <!--end of cell3-->
+  
+  <script>
+  $(document).ready(function(){
+    $('.dropdown-submenu a.test').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  </script>
   </div>
 
 
@@ -160,6 +155,7 @@ $(document).ready(function(){
 </div>
 
 <div class="w3-container" style="margin-top: 30px;">  
+   
 
 <div class="w3-cell-row">
 
@@ -185,6 +181,19 @@ $(document).ready(function(){
 </div>
 
   <br>
+
+
+  <div class="w3-card-2" style="width: 70%; margin-left: 5%; margin-top: 20px">
+
+  <div style="margin-left: 20px;">
+    <button id="btn14" style="margin-right: 10px" class= "w3-button w3-green w3-hover-red">Fetch from /fetch using fetch</button>
+    </div>
+    <div id="fetch_db_result">
+    <div id="db_table"></div>
+    </div>
+  </div>
+
+
   <div class="w3-card-2" style="width: 70%; margin-left: 5%; margin-top: 20px">
   <div class="w3-center"><a class="w3-xlarge w3-center" href="/array_test">array test</a> </div> 
 
