@@ -6,6 +6,9 @@ import re
 from flask_restful import Resource, Api
 import os
 import json
+from flask_socketio import SocketIO, Namespace, emit
+
+
 
 # for logging testing
 from logging.handlers import RotatingFileHandler
@@ -17,9 +20,20 @@ import traceback
 from simplesqlite import SimpleSQLite
 app = Flask(__name__)
 api = Api(app)
-
+socketio = SocketIO(app, async_handlers=True, ping_timeout=1800)
 
 # Test API
+
+import threading
+
+def set_interval(func, sec):
+    def func_wrapper():
+        set_interval(func, sec)
+        func()
+    t = threading.Timer(sec, func_wrapper)
+    t.start()
+    return t
+
 
 class HelloWorld(Resource):
     def get(self):
@@ -574,6 +588,19 @@ def multi():
     return render_template('multi_layer.html')
 
 
+def emit_message(counter):
+    socketio.emit("test","hello this is Socketio talking..." + str(counter))
+    return
+@app.route("/socketio_test")
+def socketio_test():
+    data = request.args.to_dict()
+    print(data)
+    print("got it...")
+    for i in range(0,20):
+        emit_message(i)
+    # set_interval(emit_message, 1)
+    return json.dumps({"status":"OK"})
+
 
 @app.route("/simpledb")
 def simpledb():
@@ -629,4 +656,5 @@ if __name__=="__main__":
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.ERROR)
     logger.addHandler(handler)
-    app.run(debug=True, port=5001)
+    # app.run(debug=True, port=5001)
+    socketio.run(app, debug=True, host='localhost', port=5001)
