@@ -122,7 +122,8 @@
 <div class="sidenav w3-card-4" style="font-family: Segoe UI,Arial,sans-serif;">
   <a href="#" onclick="on()" >Turn on overlay</a>
   <a href="/test">test</a>
-  <a href="#clients">Clients</a>
+  <a href="/fsm">textFsm</a>
+  <a href="/celery">celery</a>
   <a href="#contact">Contact</a>
   <div class="w3-container w3-cell">
     <div class="dropdown" style="z-index: 10000; position: fixed;">
@@ -151,6 +152,7 @@
   
   <script>
   $(document).ready(function(){
+    
     $('.dropdown-submenu a.test').on("click", function(e){
       $(this).next('ul').toggle();
       e.stopPropagation();
@@ -170,7 +172,17 @@ var socket = io.connect(url);
       console.log(res_str);
     }});  //end of ajax              
                      }); //eof button click function
-                  
+ 
+  
+   $("#btn_celery").click(function(){
+     data1 = {"hello":"World"};
+    $.ajax({url:"/celery", data:data1,  success: function(res_str){
+                      console.log(res_str);
+                      alert(res_str)
+                         }});  //end of ajax
+                        
+                     }); //eof button click function
+                    
 
 
     $("#btn_socketio_test").click(function(){
@@ -182,7 +194,97 @@ var socket = io.connect(url);
      
                      
                      }); //eof button click function
+
+    $("#btn_fsm").click(function(){
+     data1 = {"hello":"World"};
+    $.ajax({url:"/fsm", data:data1,  success: function(res_str){
+                      console.log(res_str);
+
+                      res_array = JSON.parse(res_str);
+
+                tb_header = ["1", "2", "3", "4", "5", "6"];
+                
+                var table_row = [];  
+              
+              var table = document.createElement("table");
+                  table.setAttribute("class", "w3-table-all");
+
+              // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+             
+
+                  createTable(res_array, table);
+              //eof creat table
+
+                         }});  //end of ajax
+     
+                     
+                     }); //eof button click function
    
+
+ function createTable(tableData, table) {
+  var table = document.createElement('table');
+  var tableBody = document.createElement('tbody');
+  var tr = table.insertRow(-1); 
+  var th = document.createElement("th"); 
+                  th.setAttribute("class", "w3-green")
+                  th.setAttribute("style", "width: 15%")
+                  th.innerHTML = " Switch name "
+                  tr.appendChild(th);
+
+                  var th = document.createElement("th"); 
+                  th.setAttribute("class", "w3-green")
+                  th.setAttribute("style", "width: 15%")
+                  th.innerHTML = "Description1"
+                  tr.appendChild(th);   
+
+                  var th = document.createElement("th"); 
+                  th.setAttribute("class", "w3-green")
+                  th.setAttribute("style", "width: 15%")
+                  th.innerHTML = "Description2"
+                  tr.appendChild(th);   
+
+                  var th = document.createElement("th"); 
+                  th.setAttribute("class", "w3-green")
+                  th.setAttribute("style", "width: 15%")
+                  th.innerHTML = "Description3"
+                  tr.appendChild(th);   
+
+                  var th = document.createElement("th"); 
+                  th.setAttribute("class", "w3-green")
+                  th.setAttribute("style", "width: 15%")
+                  th.innerHTML = " version"
+                  tr.appendChild(th);
+                  
+                  var th = document.createElement("th"); 
+                  th.setAttribute("class", "w3-green")
+                  th.setAttribute("style", "width: 15%")
+                  th.innerHTML = "serial number"
+                  tr.appendChild(th);   
+
+  table.appendChild(tr);           
+  tableData.forEach(function(rowData) {
+    var row = document.createElement('tr');
+
+    rowData.forEach(function(cellData) {
+      var cell = document.createElement('td');
+      cell.appendChild(document.createTextNode(cellData));
+      row.appendChild(cell);
+    });
+
+    tableBody.appendChild(row);
+  });
+
+  table.appendChild(tableBody);
+  document.body.appendChild(table);
+  var divContainer = document.getElementById("createtable");
+              divContainer.innerHTML = "";
+              divContainer.innerHTML = "<br> <br> <hr style = 'border-top: 1px solid gray'>" 
+              divContainer.appendChild(table);
+              //eof creat table
+}
+
+
   });
 
 
@@ -224,9 +326,28 @@ var socket = io.connect(url);
 
   <br>
   
-  <!-- start here -->
+  <!---------------------------------------------------- start here-------------------------------------------- -->
+ <!---------------------------------------------------- start here-------------------------------------------- -->
+  <!---------------------------------------------------- start here-------------------------------------------- -->
+   <!---------------------------------------------------- start here-------------------------------------------- -->
+   
+   <div >
+    <button id="btn_celery" style="margin-left: 30px;" class= "w3-button w3-green w3-hover-red">celery test</button>
+  </div>
 
-     
+  <br>
+   
+   
+
+   <div >
+    <button id="btn_fsm" style="margin-left: 30px;" class= "w3-button w3-green w3-hover-red">fsm</button>
+  </div>
+
+  <br>
+  <div id="createtable"></div>
+
+  <br>
+
   <div >
     <button id="btn_socketio_test" style="margin-left: 30px;" class= "w3-button w3-green w3-hover-red">SocketIO test</button>
   </div>

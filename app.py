@@ -22,6 +22,10 @@ app = Flask(__name__)
 api = Api(app)
 socketio = SocketIO(app, async_handlers=True, ping_timeout=1800)
 
+#### test celery####
+from test import add, printout
+
+
 # Test API
 
 import threading
@@ -646,6 +650,34 @@ def simpledb():
 
     print("Last line of the simpledb function:")
     return json.dumps(return_array)
+
+import textfsm
+@app.route("/fsm")
+def fsm():
+    # Load the input file to a variable
+    input_file = open("./data/show_inventory.txt", encoding='utf-8')
+    raw_text_data = input_file.read()
+    input_file.close()
+
+    # Run the text through the FSM. 
+    # The argument 'template' is a file handle and 'raw_text_data' is a 
+    # string with the content from the show_inventory.txt file
+    template = open("./data/show_inventory_multiple.textfsm")
+    re_table = textfsm.TextFSM(template)
+    fsm_results = re_table.ParseText(raw_text_data)
+
+@app.route("/celery")
+def celery_test():
+    # celery teset 
+    print("in celery function")
+    add.delay(3,2)
+    # print(result.get())
+    # if result.ready():
+    #     result_return = result.get()
+    #     print("the result is ", result_return)
+    printout.delay("thi is the message sent to celery")
+    return 'OK'
+
 
 if __name__=="__main__":
     
