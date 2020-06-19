@@ -1,35 +1,36 @@
-import os
 from flask import Flask,render_template, request,json,jsonify, session
 from flask import Blueprint, render_template, redirect, url_for, request, flash, session, send_file, send_from_directory
 from collections import OrderedDict
-import re
-from flask_restful import Resource, Api
-import os
-import json
+import re, os, json
+from simplesqlite import SimpleSQLite
 from flask_socketio import SocketIO, Namespace, emit
-
-
-
-# for logging testing
-from logging.handlers import RotatingFileHandler
-from flask import Flask, request, jsonify
+from flask import Flask,render_template, request,json,jsonify, session
+from flask import Blueprint, render_template, redirect, url_for, request, flash, session, send_file, send_from_directory
+from flask_restful import Resource, Api
 from time import strftime
+
 import logging
 import traceback
-# end for logging testing
-from simplesqlite import SimpleSQLite
+
+from logging.handlers import RotatingFileHandler
+handler = RotatingFileHandler('app.log', maxBytes=100000, backupCount=3)
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.ERROR)
+logger.addHandler(handler)
+
 app = Flask(__name__)
-api = Api(app)
 socketio = SocketIO(app, async_handlers=True, ping_timeout=1800)
+api = Api(app)
+class HelloWorld(Resource):
+    def get(self):
+        message = "<pre>class HelloWorld(Resource): def get(self):  return {'hello': 'world' }</pre>"
+        return {'hello': 'world', 'message': json.dumps(message),}
 
-#### test celery####
-from test import add, printout
+api.add_resource(HelloWorld, '/hello')
 
-
-# Test API
+app.config['SECRET_KEY'] = 'the random string' 
 
 import threading
-
 def set_interval(func, sec):
     def func_wrapper():
         set_interval(func, sec)
@@ -37,18 +38,6 @@ def set_interval(func, sec):
     t = threading.Timer(sec, func_wrapper)
     t.start()
     return t
-
-
-class HelloWorld(Resource):
-    def get(self):
-        message = "<pre>class HelloWorld(Resource): def get(self):  return {'hello': 'world' }</pre>"
-        return {'hello': 'world', 'message': json.dumps(message),}
-
-api.add_resource(HelloWorld, '/hello')
- 
-# 
-app.config['SECRET_KEY'] = 'the random string' 
-
 @app.route('/result')
 def result():
     data = request.args.get('data')
@@ -665,28 +654,24 @@ def fsm():
     template = open("./data/show_inventory_multiple.textfsm")
     re_table = textfsm.TextFSM(template)
     fsm_results = re_table.ParseText(raw_text_data)
+    return json.dumps(fsm_results)
+
+from test import add,printout, message_add
+
+
 
 @app.route("/celery")
 def celery_test():
+    
     # celery teset 
     print("in celery function")
-    add.delay(3,2)
+    result_add = add.delay(3,2)
     # print(result.get())
     # if result.ready():
     #     result_return = result.get()
     #     print("the result is ", result_return)
     printout.delay("thi is the message sent to celery")
+    # message_add.delay(result_add)
     return 'OK'
 
 
-if __name__=="__main__":
-    
-    # maxBytes to small number, in order to demonstrate the generation of multiple log files (backupCount).
-    handler = RotatingFileHandler('app.log', maxBytes=100000, backupCount=3)
-    # getLogger(__name__):   decorators loggers to file + werkzeug loggers to stdout
-    # getLogger('werkzeug'): decorators loggers to file + nothing to stdout
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.ERROR)
-    logger.addHandler(handler)
-    # app.run(debug=True, port=5001)
-    socketio.run(app, debug=True, host='localhost', port=5001)

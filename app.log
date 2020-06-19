@@ -1,1018 +1,1243 @@
-[2020-May-31 22:25] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-May-31 22:25] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:27] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:27] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-May-31 22:27] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:28] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:28] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-May-31 22:28] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:31] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:31] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-May-31 22:31] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:33] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:33] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-May-31 22:33] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:34] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:34] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-May-31 22:34] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:35] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:35] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-May-31 22:35] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:38] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-May-31 22:38] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-May-31 22:38] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-01 16:00] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 18:53] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 18:58] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 19:04] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /socketio_test?hello=World 200 OK
-[2020-Jun-01 21:34] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-01 21:35] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-02 21:04] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-02 21:04] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-02 21:04] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-02 21:04] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-02 21:04] 127.0.0.1 GET http /socketio_test?hello=World 200 OK
-[2020-Jun-02 21:04] 127.0.0.1 GET http /socketio_test?hello=World 200 OK
-[2020-Jun-02 21:04] 127.0.0.1 GET http /socketio_test?hello=World 200 OK
-[2020-Jun-02 21:47] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-02 22:03] 127.0.0.1 GET http /fetch? 200 OK
-[2020-Jun-03 20:58] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-03 20:58] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /hello? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/billboard.js.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/js/billboard.css.map? 5xx INTERNAL SERVER ERROR
-Traceback (most recent call last):
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 976, in send_static_file
-    cache_timeout=cache_timeout)
-  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/helpers.py", line 709, in send_from_directory
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-[2020-Jun-05 20:15] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-05 20:16] 127.0.0.1 GET http /socketio_test?hello=World 200 OK
-[2020-Jun-05 20:16] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-07 13:39] 127.0.0.1 GET http /fsm?hello=World 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 21:16] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /fsm?hello=World 200 OK
+[2020-Jun-08 21:16] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "app.py", line 677, in celery_test
-    return json.dumps(result_return)
-UnboundLocalError: local variable 'result_return' referenced before assignment
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 666, in celery_test
+    add.delay(3,2)
+NameError: name 'add' is not defined
 
-[2020-Jun-07 15:37] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+[2020-Jun-08 21:17] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "app.py", line 677, in celery_test
-    return json.dumps(result_return)
-UnboundLocalError: local variable 'result_return' referenced before assignment
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 666, in celery_test
+    add.delay(3,2)
+NameError: name 'add' is not defined
 
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 15:37] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+[2020-Jun-08 21:18] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "app.py", line 677, in celery_test
-    return json.dumps(result_return)
-UnboundLocalError: local variable 'result_return' referenced before assignment
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 666, in celery_test
+    add.delay(3,2)
+NameError: name 'add' is not defined
 
-[2020-Jun-07 15:40] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+[2020-Jun-08 21:19] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "app.py", line 677, in celery_test
-    return json.dumps(result_return)
-UnboundLocalError: local variable 'result_return' referenced before assignment
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 666, in celery_test
+    add.delay(3,2)
+NameError: name 'add' is not defined
 
-[2020-Jun-07 15:44] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 15:44] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+[2020-Jun-08 21:20] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 21:27] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 21:28] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /fsm?hello=World 200 OK
+[2020-Jun-08 21:29] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 21:31] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 21:33] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 21:35] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 21:51] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 21:58] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 21:59] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 22:01] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 22:12] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /fsm?hello=World 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:14] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /fsm?hello=World 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:15] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:17] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:18] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:20] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:20] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:21] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:22] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:22] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 22:23] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 22:24] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 22:25] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 22:25] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 22:25] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 22:25] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 22:25] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:26] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:26] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "app.py", line 678, in celery_test
-    return json.dumps(result_return)
-UnboundLocalError: local variable 'result_return' referenced before assignment
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 679, in celery_test
+    message_add.delay(result_add)
+AttributeError: 'function' object has no attribute 'delay'
 
-[2020-Jun-07 15:46] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+[2020-Jun-08 22:29] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 22:29] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "app.py", line 678, in celery_test
-    return json.dumps(result_return)
-UnboundLocalError: local variable 'result_return' referenced before assignment
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 679, in celery_test
+    message_add.delay(result_add)
+AttributeError: 'function' object has no attribute 'delay'
 
-[2020-Jun-07 15:46] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+[2020-Jun-08 22:30] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "app.py", line 678, in celery_test
-    return json.dumps(result_return)
-UnboundLocalError: local variable 'result_return' referenced before assignment
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 679, in celery_test
+    message_add.delay(result_add)
+AttributeError: 'function' object has no attribute 'delay'
 
-[2020-Jun-07 15:47] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+[2020-Jun-08 22:30] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-08 22:30] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "app.py", line 674, in celery_test
-    print(resul.get())
-NameError: name 'resul' is not defined
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
 
-[2020-Jun-07 15:47] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+[2020-Jun-08 22:30] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
   File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "app.py", line 674, in celery_test
-    print(resul.get())
-NameError: name 'resul' is not defined
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
 
-[2020-Jun-07 15:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 15:51] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 15:52] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:03] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:05] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:06] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:07] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:07] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:09] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:10] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:11] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:12] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:12] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:14] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:16] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:17] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:17] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:18] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:19] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:46] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:46] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:46] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:46] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:47] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/signin.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/script.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/data/data.json? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:48] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:50] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:51] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:51] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:51] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:52] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:53] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:54] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:55] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:55] 127.0.0.1 GET http /? 200 OK
-[2020-Jun-07 16:55] 127.0.0.1 GET http /static/favicon.ico? 200 OK
-[2020-Jun-07 16:55] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:55] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:55] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:58] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 16:59] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 17:03] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 17:03] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 17:05] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 17:05] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 17:05] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 19:02] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 19:02] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 19:02] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 19:05] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 19:05] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 19:06] 127.0.0.1 GET http /celery?hello=World 200 OK
-[2020-Jun-07 19:06] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-08 22:32] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-08 22:32] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-08 22:33] 127.0.0.1 GET http /fsm?hello=World 200 OK
+[2020-Jun-08 22:33] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-08 22:33] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-08 22:34] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-09 16:57] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-09 16:57] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-09 16:57] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /fsm?hello=World 200 OK
+[2020-Jun-09 16:57] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-09 21:16] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-09 21:16] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-09 21:16] 127.0.0.1 GET http /celery?hello=World 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'AsyncResult' is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/root/flask/PythonFlaskjQueryAjax/app.py", line 674, in celery_test
+    message_add.delay(result_add)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/task.py", line 569, in apply_async
+    **options
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/base.py", line 780, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/celery/app/amqp.py", line 559, in send_task_message
+    **properties
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 169, in publish
+    compression, headers)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/messaging.py", line 252, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 54, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/vine/five.py", line 194, in reraise
+    raise value.with_traceback(tb)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 50, in _reraise_errors
+    yield
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/serialization.py", line 221, in dumps
+    payload = encoder(data)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 70, in dumps
+    **dict(default_kwargs, **kwargs))
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jon/venv/p3/lib/python3.6/site-packages/kombu/utils/json.py", line 59, in default
+    return super(JSONEncoder, self).default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+kombu.exceptions.EncodeError: Object of type 'AsyncResult' is not JSON serializable
+
+[2020-Jun-09 21:16] 127.0.0.1 GET http /fsm?hello=World 200 OK
+[2020-Jun-09 21:16] 127.0.0.1 GET http /fsm?hello=World 200 OK
+[2020-Jun-09 21:16] 127.0.0.1 GET http /fsm?hello=World 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-09 22:20] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-10 19:48] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-10 19:51] 127.0.0.1 GET http /celery?hello=World 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-17 21:46] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /doc? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-17 22:00] 127.0.0.1 GET http /static/favicon.ico? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /hello? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/bootstrap.min.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/tablesort.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/script.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/jquery-1.9.0.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/signin.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/auto-complete.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/scss_css.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/fetch.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/billboard.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/auto-complete.min.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/my_style.css? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/data/data.json? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/autocomplete.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/billboard.js? 200 OK
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/billboard.js.map? 404 NOT FOUND
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/js/billboard.css.map? 404 NOT FOUND
+[2020-Jun-17 22:01] 127.0.0.1 GET http /static/css/scss_css.css.map? 200 OK
